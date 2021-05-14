@@ -68,7 +68,7 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
-tag_map:
+tag_map: 
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
@@ -104,9 +104,3 @@ theme: clean
 deploy:
   type: ''
 
-footer:
-  social_link:
-    github_url: https://github.com/aixieluo
-  menu:
-    Home: /
-    Tags: /tags/blog

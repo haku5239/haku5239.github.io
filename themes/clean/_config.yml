@@ -12,7 +12,7 @@ favicon: /img/favicon.png
 
 # Site start year
 # Default with current year
-start_year: 
+start_year: 2017
 
 # Post config
 # ---------------------------------------------------------------
@@ -57,14 +57,14 @@ footer:
   menu:
     Home: /
     Archives: /archives
-    Tags: /tags
+    Tags: /tags/blog
     Categories: /categories
     About: /about
   social_link:
     twitter_url:
     twitter_handle:
     facebook_url:
-    github_url:
+    github_url: https://github.com/aixieluo
     gitlab_url:
     linkedin_url: 
     mailto:
