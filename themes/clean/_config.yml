@@ -61,13 +61,13 @@ footer:
     Categories: /categories
     About: /about
   social_link:
-    twitter_url:
+    twitter_url: https://twitter.com/aixieluo
     twitter_handle:
     facebook_url:
     github_url: https://github.com/aixieluo
     gitlab_url:
     linkedin_url: 
-    mailto:
+    mailto: admin@aixieluo.com
 
 # Tracking config
 # ---------------------------------------------------------------
