@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<!--Description-->
+
+
+
+    <meta name="description" content="坚持、坚持、坚持"/>
+
+
+<!--Author-->
+
+    <meta name="author" content="39"/>
+
+
+<!--Open Graph Title-->
+
+    <meta property="og:title" content="git"/>
+
+
+<!--Open Graph Description-->
+
+    <meta property="og:description" content="坚持、坚持、坚持"/>
+
+
+<!--Open Graph Site Name-->
+    <meta property="og:site_name" content="39 Blog"/>
+
+<!--Type page-->
+
+    <meta property="og:type" content="article"/>
+
+
+<!--Page Cover-->
+
+
+    <meta property="og:image" content="https://aixieluo.github.io/img/home-bg.jpg"/>
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+
+
+
+
+    <meta name="twitter:image" content="https://aixieluo.github.io/img/home-bg.jpg"/>
+
+
+<!-- Title -->
+
+<title>git | 39 Blog</title>
+
+<!-- Bootstrap Core CSS -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+
+<!-- Custom CSS -->
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<!-- Custom Fonts -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css" />
+<link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css" />
+<link href="//fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Gallery -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/featherlight@1.4.0/src/featherlight.css" integrity="sha256-30DV/STftlyQ6v8yaOWlabammvCYtRJERLj/m0b3zno=" crossorigin="anonymous">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/lightgallery@1.6.11/dist/css/lightgallery.min.css">
+
+<!-- favicon -->
+
+<link rel="icon" href="/img/favicon.png"/>
+
+
+
+    <!-- Google Analytics -->
+    
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<!-- Head tag -->
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top bg-transparent position-absolute w-100 p-0" id="nav">
+    <div class="container pl-0 pr-0">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <a class="navbar-brand text-white p-1 pl-3" href="/">39 Blog</a>
+        </div>
+        <div class="navbar-nav float-right">
+            <button class="btn btn-link search-btn navbar-item" data-toggle="modal" data-target="#searchModal">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 text-center">
+                <div class="post-heading text-white">
+                    <h1>git</h1>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Main Content -->
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                
+                    <span class="meta d-inline-block">
+    
+        <i class="far fa-bookmark fa-fw"></i>
+        
+
+<a href="/categories/Command/">Command</a>/ <a href="/categories/Command/Git/">Git</a>
+
+    
+    
+    <!-- Date -->
+    
+        <span class="post-meta-split">&nbsp;|&nbsp;</span>
+        <i class="far fa-calendar-check fa-fw"></i>
+        2017-07-14
+    
+    <!-- word count and read count -->
+    
+
+    
+
+    
+</span>  
+                
+                <h3 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h3><p>Linux 上使用如下命令安装</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install git</span><br></pre></td></tr></table></figure>
+
+<p>Mac OS 上可以使用 HomeBrew 安装，命令如下</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install git</span><br></pre></td></tr></table></figure>
+
+<p>安装完成后，需要设置用户名和邮箱</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &lt;your name&gt;</span><br><span class="line">$ git config --global user.email &lt;email@example.com&gt;</span><br></pre></td></tr></table></figure>
+
+<p>注意，使用 <code>--global</code> 参数后，表示你这台机器上所有的 Git 仓库都会使用这个配置，你也可以为某个仓库指定不同的用户名和邮箱</p>
+<span id="more"></span>
+
+<h3 id="初始化本地仓库"><a href="#初始化本地仓库" class="headerlink" title="初始化本地仓库"></a>初始化本地仓库</h3><p>进入项目目录后</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure>
+
+<p>创建完成后当前目录下会多出一个 <code>.git</code> 的目录，这个目录是用来跟踪管理版本库的，千万不要手动修改这个目录里面的文件</p>
+<h3 id="查看本地文件状态"><a href="#查看本地文件状态" class="headerlink" title="查看本地文件状态"></a>查看本地文件状态</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br></pre></td></tr></table></figure>
+
+<p><code>git status</code> 命令可以让我们随时查看本地仓库的当前状态。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git diff</span><br></pre></td></tr></table></figure>
+
+<p><code>diff</code> 顾名思义就是 <code>difference</code> ，可以查看某文件先后作了什么修改</p>
+<h3 id="添加文件到仓库"><a href="#添加文件到仓库" class="headerlink" title="添加文件到仓库"></a>添加文件到仓库</h3><p>使用以下命令可以指定文件添加到暂存区</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add &lt;name&gt;</span><br></pre></td></tr></table></figure>
+
+<p>如果将输入名称的位置用 <code>.</code> 代替，则会添加当前目录下所有有改动的文件（包括新建和删除）到暂存区</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add .</span><br></pre></td></tr></table></figure>
+
+<p>提交到仓库</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m &quot;commit info&quot;</span><br></pre></td></tr></table></figure>
+
+<p>在 <code>-m</code> 参数后面添加本次提交信息的概要，可以帮助自己或他们理解本次提交作了什么工作</p>
+<h3 id="版本回退"><a href="#版本回退" class="headerlink" title="版本回退"></a>版本回退</h3><p>使用 <code>git log</code> 命令可以查看提示历史，例如</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$ git log</span><br><span class="line">commit 1741e2b6b792f88f4da47905409e1ced7bf4214a</span><br><span class="line">Author: 39 &lt;admin@aixieluo.com&gt;</span><br><span class="line">Date:   Sun Jul 16 15:42:40 2017 +0800</span><br><span class="line"></span><br><span class="line">    创建 Demo Repository 和 Interface</span><br><span class="line"></span><br><span class="line">commit 2c933d4ab6813030699fc4f0209e0ddfebbee7fa</span><br><span class="line">Author: 39 &lt;admin@aixieluo.com&gt;</span><br><span class="line">Date:   Fri Jul 14 17:23:35 2017 +0800</span><br><span class="line"></span><br><span class="line">    创建 study 项目</span><br></pre></td></tr></table></figure>
+
+<p><code>git log</code> 命令显示从近到远的提交日志，我们可以看到 2 次提交 “创建 study 项目”、“创建 Demo Repository 和 Interface”，如果不想显示太多信息，可以使用 <code>--pretty=oneline</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git log --pretty=oneline</span><br><span class="line">1741e2b6b792f88f4da47905409e1ced7bf4214a 创建 Demo Repository 和 Interface</span><br><span class="line">2c933d4ab6813030699fc4f0209e0ddfebbee7fa 创建 study 项目</span><br></pre></td></tr></table></figure>
+
+<p>如例子中显示的 <code>2c933...e7fa</code> 这串字符串是 <code>commit id</code> （即版本号）</p>
+<p>当我们需要回到第一个版本时，可以使用 <code>git reset</code> 命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reset --hard HEAD^</span><br></pre></td></tr></table></figure>
+
+<p>用 <code>HEAD</code> 表示当前版本的话，那上个版本就是 <code>HEAD^</code> ，上上个版本就是 <code>HEAD^^</code> ， 如果是 39 个版本前，可以写成 <code>HEAD~39</code> 。</p>
+<p>当你想要回到当时回退前的版本时，只要找到那个版本的 <code>commit id</code> ，就可以回到那个版本了</p>
+<p>比如上面例子的第二个版本</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reset --hard 1741e2b</span><br></pre></td></tr></table></figure>
+
+<p>这样就可以回到第二个版本了，版本不需要写全，只需要写最前面几位即可， <code>Git</code> 会自己去匹配对应的版本（但是也不能太短哟），当已经找不到之前回退的版本号时，可以使用 <code>git reflog</code> ，这个命令记录了你每一次版本修改命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git reflog</span><br><span class="line">2c933d4 (HEAD -&gt; master) HEAD@&#123;0&#125;: reset: moving to HEAD^</span><br><span class="line">1741e2b HEAD@&#123;1&#125;: commit: 创建 Demo Repository 和 Interface</span><br><span class="line">2c933d4 (HEAD -&gt; master) HEAD@&#123;2&#125;: commit (initial): 创建 study 项目</span><br></pre></td></tr></table></figure>
+
+<p><code>1741e2b</code> 就是我们当时第二个版本的 <code>commit id</code></p>
+<p>如果想要放弃对某个文件的修改</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -- &lt;name&gt;</span><br></pre></td></tr></table></figure>
+
+<p><code>name</code> 为想要放弃修改的文件的名称，此处分为两种情况<br>如果该文件自修改后还没有放到暂存区，此时修改会回到和版本库一模一样的状态<br>另一种情况是该文件已经添加到暂存区，又作了修改，此时撤销修改就会回到暂存区后的状态<br>总之，就是让这个文件回到最近一次的 <code>git commit</code> 或者 <code>git add</code> 时的状态</p>
+<p><code>git checkout -- &lt;name&gt;</code> 中的 <code>--</code> 非常重要不可省略，因为没有 <code>--</code> 就会变成另一个命令了</p>
+<p>当要删除项目中一个文件时，可以直接使用 <code>rm</code> 或者在 <code>IDE</code> 中直接删除，此时 Git 会知道你删除了文件，因为工作区和版本库之间不一致了，使用 <code>git status</code> 命令可以查看那些文件被删除了</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ rm demo.txt</span><br><span class="line">$ git stautus</span><br><span class="line">On branch master</span><br><span class="line">Changes not staged for commit:</span><br><span class="line">  (use &quot;git add/rm &lt;file&gt;...&quot; to update what will be committed)</span><br><span class="line">  (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)</span><br><span class="line"></span><br><span class="line">	deleted:    demo.txt</span><br><span class="line"></span><br><span class="line">no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)</span><br></pre></td></tr></table></figure>
+
+<p>现在你有两个选择，一个是确实要删除这个文件，那就使用 <code>git rm</code> 删除，并且 <code>git commit</code><br>现在这个文件确实从版本库中删除了。<br>另一种就是删错了，因为版本库中还在，所以可以轻松的把误删的文件恢复到最新版本</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -- demo.txt</span><br></pre></td></tr></table></figure>
+
+<p>这样文件就回来了</p>
+<h3 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h3><p>同一个 Git 仓库可以分布到不同的电脑上，可以找一台电脑充当服务器的角色，可以把各种提交推送到服务器仓库中，也可以从服务器仓库中拉取别人的提交。</p>
+<p>如果没有服务器，可以使用 <a target="_blank" rel="noopener" href="https://github.com/">GitHub</a> 免费提供的远程仓库</p>
+<p>第一步：创建 SSH Key 。在用户主目录下，检查是否有 <code>.ssh</code> 目录，如果有，在看看该目录有没有 <code>id_rsa</code> 和 <code>id_rsa.pub</code> 这两个文件，如果已经有了，可以直接跳到下一步，如果没有，请使用以下命令创建 SSH Key</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C &lt;your email&gt;</span><br></pre></td></tr></table></figure>
+
+<p>一切顺利的话，可以在 <code>.ssh</code> 目录下找到 <code>id_rsa</code> 和 <code>id_rsa.pub</code> 这两个文件， <code>id_rsa</code> 是私匙，不可以泄露出去， <code>id_rsa.pub</code> 是公匙，可以放心告诉别人。</p>
+<p>第二部：登录 GitHub ，打开 “Account settings” 中的 “SSH Key” 页面<br>点 “Add SSH Key” ，填上任意 Title ，在 Key 文本框中粘贴 <code>id_rsa.pub</code> 文件的内容</p>
+<h4 id="添加远程仓库"><a href="#添加远程仓库" class="headerlink" title="添加远程仓库"></a>添加远程仓库</h4><p>首先在 GitHub 上建立一个名为 study 的仓库，保持默认设置，点击 “Create repository” 按钮，就成功的建立了一个新的 Git 仓库<br>目前这个 study 仓库还是空的，Github 告诉我们可以从这个仓库克隆出新的仓库，也可以把一个已有的本地仓库与之关联，然后，把本地仓库的内容推送到 GitHub 仓库。</p>
+<p>现在根据提示，对本地仓库运行命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin git@github.com:aixieluo/study.git</span><br></pre></td></tr></table></figure>
+
+<p>此处注意，上面的 <code>aixieluo</code> 是我的 Github 名称，使用时请使用自己的账户名<br>添加后 <code>origin</code> 就是远程仓库的名字了，这是 Git 默认的叫法，可以自定义</p>
+<p>下一步就是将本地仓库的内容推送到远程库上：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin master</span><br><span class="line">Counting objects: 136, done.</span><br><span class="line">Delta compression using up to 4 threads.</span><br><span class="line">Compressing objects: 100% (115/115), done.</span><br><span class="line">Writing objects: 100% (136/136), 226.80 KiB | 0 bytes/s, done.</span><br><span class="line">Total 136 (delta 16), reused 0 (delta 0)</span><br><span class="line">remote: Resolving deltas: 100% (16/16), done.</span><br><span class="line">To github.com:aixieluo/study.git</span><br><span class="line"> * [new branch]      master -&gt; master</span><br><span class="line">Branch master set up to track remote branch master from origin.</span><br></pre></td></tr></table></figure>
+
+<p>把本地库的内容推送到远程，用 <code>git push</code> 命令，实际上是把当前分支 master 推送到远程。</p>
+<p>由于远程库是空的，我们第一次推送 <code>master</code> 分支时，加上了 <code>-u</code> 参数，Git 不但会把本地的 <code>master</code> 分支内容推送的远程新的 <code>master</code> 分支，还会把本地的 <code>master</code> 分支和远程的 <code>master</code> 分支关联起来，在以后的推送或者拉取时就可以简化命令。</p>
+<h3 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h3><p>首先我们创建 <code>dev</code> 分支，然后切换到 <code>dev</code> 分支</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -b dev</span><br><span class="line">Switched to a new branch &#x27;dev&#x27;</span><br></pre></td></tr></table></figure>
+
+<p><code>git checkout</code> 命令加上 <code>-b</code> 参数，表示创建并且切换，相当于以下两条命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git branch dev</span><br><span class="line">$ git checkout dev</span><br><span class="line">Switched to a new branch &#x27;dev&#x27;</span><br></pre></td></tr></table></figure>
+
+<p>使用 <code>git branch</code> 可以查看当前分支，当前分支前面会表示一个 <code>*</code> 号</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br><span class="line">* dev</span><br><span class="line">  master</span><br></pre></td></tr></table></figure>
+
+<p>删除文件 <code>demo.txt</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git rm demo.txt</span><br><span class="line">rm &#x27;demo.txt&#x27;</span><br></pre></td></tr></table></figure>
+
+<p>然后提交</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m &quot;delete demo.txt&quot;</span><br></pre></td></tr></table></figure>
+
+<p>然后切换回 <code>master</code> 分支，发现删除掉的 <code>demo.txt</code> 出现了。</p>
+<p>现在我们把 <code>dev</code> 分支的工作成果合并到 <code>master</code> 分支上</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ git merge dev</span><br><span class="line">Updating dead195..e9ed3d4</span><br><span class="line">Fast-forward</span><br><span class="line"> demo.txt | 0</span><br><span class="line"> 1 file changed, 0 insertions(+), 0 deletions(-)</span><br><span class="line"> delete mode 100644 demo.txt</span><br></pre></td></tr></table></figure>
+
+<p><code>git merge</code> 命令用于合并指定分支到当前分支，合并后可以放心的删除 <code>dev</code> 分支<br>注意到上面的 <code>Fast-forward</code> 信息， Git 告诉我们，这次合并是“快进模式”，也就是直接把 <code>master</code> 指向 <code>dev</code> 的当前提交，所以合并速度非常快。</p>
+<p><code>Fast-foward</code> 模式下，删除分支后，会丢失分支信息。如果要强制禁用 <code>Fast-foward</code> 模式， Git 就会在 merge 模式时生成一个新的 commit ，这样，从分支历史上就可以看到分支信息了。<br><code>--no-ff</code> 参数强制禁用 <code>Fast-foward</code> 模式，使用 <code>--no-ff</code> 参数时，合并要创建一个新的 commit ，所以要带上 <code>-m</code> 参数</p>
+<p><code>git log</code> 使用 <code>--graph</code> 参数可以查看分支历史， <code>abbrev-commit</code> 参数可以查看缩略版的 <code>commit id</code></p>
+<h4 id="删除分支-dev"><a href="#删除分支-dev" class="headerlink" title="删除分支 dev"></a>删除分支 <code>dev</code></h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -d dev</span><br><span class="line">Deleted branch dev (was e9ed3d4).</span><br></pre></td></tr></table></figure>
+
+<h4 id="强制删除未合并分支"><a href="#强制删除未合并分支" class="headerlink" title="强制删除未合并分支"></a>强制删除未合并分支</h4><p>要删除未合并的分支时，需要强行删除，使用 <code>-D</code> 参数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -D dev</span><br><span class="line">Deleted branch dev (was e9ed3d4).</span><br></pre></td></tr></table></figure>
+
+<h4 id="拉取远程分支到本地"><a href="#拉取远程分支到本地" class="headerlink" title="拉取远程分支到本地"></a>拉取远程分支到本地</h4><p>将远程分支 <code>branch_name</code> 拉取到本地，并创建同名分支并切换到此分支，此命令会使远程分支与本地分支建立映射关系</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b branch_name origin branch_name</span><br></pre></td></tr></table></figure>
+
+<h4 id="删除远程分支"><a href="#删除远程分支" class="headerlink" title="删除远程分支"></a>删除远程分支</h4><p>删除远程分支的方式比较无厘头</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin :feature/page3</span><br><span class="line">To https://github.com/aixieluo/xyd.git</span><br><span class="line"> - [deleted]         feature/page3</span><br></pre></td></tr></table></figure>
+
+<p>可以用此方式删除远程分支</p>
+<h4 id="储藏工作场景"><a href="#储藏工作场景" class="headerlink" title="储藏工作场景"></a>储藏工作场景</h4><p>软件开发过程中，当前分支开发到一半，不能提交，然后又有一个急需修复的 bug ，使用 <code>git stash</code> 可以先将当前工作场景“储藏”起来，等以后恢复现场后急需工作，处理完 bug 后，使用 <code>git stash list</code> 查看刚才保存的工作场景，<code>git stash apply</code> 指令可以恢复以前的工作场景，但是并不会删除 stash 内容，需要额外使用 <code>git stash drop</code> 删除，如果想恢复同时删除，可以使用 <code>git stash pop</code> ，在恢复的同时把 stash 内容也删除了。<br>你可以多次 stash ，恢复的时候使用 <code>git stash list</code> 然后恢复指定的 stash</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git stash list</span><br><span class="line">stash@&#123;0&#125;: WIP on master: cf1b7e8 add megre</span><br><span class="line">$ git stash apply stash@&#123;0&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h4><p>查看分支列表 <code>git branch</code></p>
+<p>创建分支 <code>git branch &lt;name&gt;</code></p>
+<p>切换分支 <code>git checkout &lt;name&gt;</code></p>
+<p>创建+切换分支 <code>git checkout -b &lt;name&gt;</code></p>
+<p>合并某分支到当前分支 <code>git merge &lt;name&gt;</code></p>
+<p>删除分支 <code>git branch -d &lt;name&gt;</code></p>
+<p>强行删除未合并分支 <code>git branch -D &lt;name&gt;</code></p>
+<p>隐藏当前工作场景 <code>git stash</code></p>
+<p>显示以前隐藏的工作场景列表 <code>git stash list</code></p>
+<p>恢复以前的工作场景 <code>git stash apply</code></p>
+<p>删除以前的工作场景 <code>git stash drop</code></p>
+<p>恢复并删除以前的工作场景 <code>git stash pop</code></p>
+<h3 id="标签管理"><a href="#标签管理" class="headerlink" title="标签管理"></a>标签管理</h3><p>在 Git 中打标签非常的容易，首先，切换到需要打标签的分支上</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br><span class="line">* dev</span><br><span class="line">master</span><br><span class="line">$ git checkout master</span><br><span class="line">Switched to branch &#x27;master&#x27;</span><br><span class="line">$ git tag v1.0</span><br></pre></td></tr></table></figure>
+
+<p>然后使用 <code>git tag</code> 可以查看所有标签列表</p>
+<p>默认标签是打在最新提交的 commit 上的，如果想要打到以前提交的 commit 上，只要找到对应的 <code>commit id</code> 就可以了</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ git log --pretty=oneline --abbrev-commit</span><br><span class="line">cf1b7e8 (HEAD -&gt; master) add megre</span><br><span class="line">2eb259e (dev) create the demo.txt</span><br><span class="line">e9ed3d4 (origin/dev) delete the demo.txt</span><br><span class="line">dead195 (origin/master) Create README.md</span><br><span class="line">f4f1eba create a txt file</span><br><span class="line">2c933d4 创建 study 项目</span><br></pre></td></tr></table></figure>
+
+<p>比如要给第一次提交的 commit 打上标签</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git tag v0.1 2c933d4</span><br><span class="line">$ git tag</span><br><span class="line">v0.1</span><br></pre></td></tr></table></figure>
+
+<p>注意标签不是按时间顺序给出的，而是按照字母排序的，可以用 <code>git show &lt;tagname&gt;</code> 查看标签信息</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ git show v0.1</span><br><span class="line">commit 2c933d4ab6813030699fc4f0209e0ddfebbee7fa (tag: v0.1)</span><br><span class="line">Author: 39 &lt;admin@aixieluo.com&gt;</span><br><span class="line">Date:   Fri Jul 14 17:23:35 2017 +0800</span><br><span class="line"></span><br><span class="line">    创建 study 项目</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<p>使用 <code>-a</code> 指定标签名，可以加上 <code>-m</code> 指定说明文字</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">$ git tag -a v0.2 -m &quot;这是 0.2 版本&quot; 2eb259e</span><br><span class="line">$ git show v0.2</span><br><span class="line">tag v0.2</span><br><span class="line">Tagger: 39 &lt;admin@aixieluo.com&gt;</span><br><span class="line">Date:   Mon Jul 17 13:31:30 2017 +0800</span><br><span class="line"></span><br><span class="line">这是 0.2 版本</span><br><span class="line"></span><br><span class="line">commit 2eb259e26d4242db3c2c8627043d11ffbda3cfc3 (tag: v0.2, dev)</span><br><span class="line">Author: 39 &lt;admin@aixieluo.com&gt;</span><br><span class="line">Date:   Mon Jul 17 13:02:33 2017 +0800</span><br><span class="line"></span><br><span class="line">    create the demo.txt</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<p>如果不想要标签或者打错标签时，也是可以删除的</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git tag -d v0.1</span><br><span class="line">Deleted tag &#x27;v0.1&#x27; (was 2c933d4)</span><br></pre></td></tr></table></figure>
+
+<p>因为标签只存储在本地，不会自动推送到远程，所以打错的标签可以安全的在本地删除</p>
+<p>如果要推送某个标签到远程，可以使用 <code>git push origin &lt;tagname&gt;</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin v0.2</span><br><span class="line">Counting objects: 1, done.</span><br><span class="line">Writing objects: 100% (1/1), 173 bytes | 0 bytes/s, done.</span><br><span class="line">Total 1 (delta 0), reused 0 (delta 0)</span><br><span class="line">To github.com:aixieluo/study.git</span><br><span class="line"> * [new tag]         v0.2 -&gt; v0.2</span><br></pre></td></tr></table></figure>
+
+<p>如果标签已经从本地推送到远程，删除起来比较麻烦一点，先从本地删除，然后从远程删除</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git tag -d v0.2</span><br><span class="line">Deleted tag &#x27;v0.2&#x27; (was d4c4ece)</span><br><span class="line">$ git push origin :refs/tags/v0.2</span><br><span class="line">To github.com:aixieluo/study.git</span><br><span class="line"> - [deleted]         v0.2</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置-Git-指令别名"><a href="#配置-Git-指令别名" class="headerlink" title="配置 Git 指令别名"></a>配置 Git 指令别名</h3><p>有没有感觉 Git 指令单词过多，不容易记住，就算记住，每次都要敲一遍是不是也挺麻烦的<br>如 <code>git status</code> 自定义为 <code>git st</code> 是不是就变得很简单了</p>
+<p>创建别名的方法如下， <code>--global</code> 代表当前电脑下所有 Git 仓库都适用这个配置</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global alias.st status</span><br><span class="line">$ git config --global alias.co checkout</span><br><span class="line">$ git config --global alias.cm commit</span><br><span class="line">$ git config --global alias.br branch</span><br></pre></td></tr></table></figure>
+
+<p>以后提交就可以简写为</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git cm -m `...`</span><br></pre></td></tr></table></figure>
+
+<p>每个仓库的 Git 配置都放在 <code>.git/config</code> 文件中，公共的 Git 配置文件放在用户主目录下的隐藏文件 <code>.gitconfig</code> 中</p>
+<p>我的别名列表</p>
+<p>st = status<br>co = checkout<br>cm = commit</p>
+<h3 id="搭建自己的-Git-服务器"><a href="#搭建自己的-Git-服务器" class="headerlink" title="搭建自己的 Git 服务器"></a>搭建自己的 Git 服务器</h3>
+            </div>
+
+            <!-- Post information -->
+            
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 post-tags">
+        
+            <i class="fas fa-tag" style="vertical-align: middle;font-size: .8rem;"></i>
+            tags:&nbsp;
+            
+            
+        
+            <a href="/tags/Git/">#Git</a>
+        
+    </div>
+
+            
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+        <ul class="pagination d-block text-center">
+            
+                <li class="previous page-item d-inline"><a href="/2017/07/20/%E7%94%A8%E6%88%B7%E7%BB%84%E3%80%81%E7%94%A8%E6%88%B7%E3%80%81%E8%B5%8B%E4%BA%88%E6%9D%83%E9%99%90/" class="page-link float-left">&larr;  Newer Posts</a></li>
+            
+            
+                <li class="next page-item d-inline"><a href="/2017/06/20/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="page-link float-right">Older Posts  &rarr;</a></li>
+            
+        </ul>
+    </div>
+
+
+            
+                <!-- Comments -->
+                
+
+                
+
+            
+
+        </div>
+    </div>
+</article> 
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    <style>
+        #toc-content .toc-link::before {
+            background-color: transparent;
+            max-height: 25px;
+        }
+
+        #toc-content .toc-link.is-active-link::before {
+            background-color: #404040;
+        }
+    </style>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <div class="ui-toc dropup scrollspy-body pull-right" style="right: 3%;">
+        <button type="button" class="toc-btn btn btn-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+            <i class="fas fa-list"></i>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right p-2"  aria-labelledby="tocLabel">
+            <div class="toc-widget">
+                <div id="toc-content" class="text-truncate">
+                </div>
+            </div>
+            <div class="toc-menu pt-3 pl-4">
+                <a class="expand-toggle d-block py-1" href="#"><span class="expand-text">Expand all</span><span class="close-text" style="display: none;">Collapse all</span></a>
+                <a class="back-to-top d-block py-1" href="#">Back to top</a>
+                <a class="go-to-bottom d-block py-1" href="#">Go to bottom</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        tocbot.init({
+            // Where to render the table of contents.
+            tocSelector: '#toc-content',
+            // Where to grab the headings to build the table of contents.
+            contentSelector: 'article',
+            // Which headings to grab inside of the contentSelector element.
+            headingSelector: 'h1, h2, h3',
+            // For headings inside relative or absolute positioned containers within content.
+            hasInnerContainers: true,
+        });
+    </script>
+
+
+    
+
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 text-center">
+                <ul class="list-inline">
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <ul class="copyright footer-menu list-inline">
+                    
+                    
+                        <li class="list-inline-item">
+                            
+                            
+                            <a href="/">
+                                
+                                    Home
+                                
+                            </a>
+                        </li>
+                    
+                        <li class="list-inline-item">
+                            
+                                <span class="copyright-split">&nbsp;|&nbsp;</span>
+                            
+                            
+                            <a href="/archives">
+                                
+                                    Archives
+                                
+                            </a>
+                        </li>
+                    
+                        <li class="list-inline-item">
+                            
+                                <span class="copyright-split">&nbsp;|&nbsp;</span>
+                            
+                            
+                            <a href="/tags">
+                                
+                                    Tags
+                                
+                            </a>
+                        </li>
+                    
+                        <li class="list-inline-item">
+                            
+                                <span class="copyright-split">&nbsp;|&nbsp;</span>
+                            
+                            
+                            <a href="/categories">
+                                
+                                    Categories
+                                
+                            </a>
+                        </li>
+                    
+                        <li class="list-inline-item">
+                            
+                                <span class="copyright-split">&nbsp;|&nbsp;</span>
+                            
+                            
+                            <a href="/about">
+                                
+                                    About
+                                
+                            </a>
+                        </li>
+                    
+                </ul>
+                <p class="copyright footer-author">
+                    &copy; -2021 
+                    <a rel="external" class="copyright-link" href="" target="_blank">39</a><br/>
+                    Powered by <a rel="external" class="copyright-link" href="https://hexo.io/" target="_blank">Hexo</a>  
+                    <span class="copyright-split">&nbsp;|&nbsp;&nbsp;</span>
+                    Theme <a rel="external" class="copyright-link" href="https://github.com/luswdev/hexo-theme-clean.git" target="_blank">Clean</a>
+                    
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    <!-- jQuery -->
+<script src="//cdn.jsdelivr.net/npm/jquery@2.1.4/dist/jquery.min.js"></script>
+
+<!-- For drop down -->
+<script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+<!-- Gallery -->
+<script src="//cdn.jsdelivr.net/npm/lightgallery@1.6.11/dist/js/lightgallery-all.min.js"></script>
+<!-- Busuanzi -->
+
+
+<!-- Search script -->
+
+<script src="/js/search.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        searchFunc( '/search.xml' , 'searchInput', 'searchResult');
+    });
+</script>
+
+
+
+<script src="/js/main.js"></script>
+
+
+
+    <!-- Search Modal -->
+    <!-- Modal -->
+<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+        <div class="modal-content overflow-auto">
+            <div class="modal-header">
+                <input type="text" class="form-control" placeholder="Searching Keywords..." id="searchInput">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div id="searchResult">
+                    <div class="search-empty text-center text-muted p-5">
+                        <i class="far fa-meh"></i>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

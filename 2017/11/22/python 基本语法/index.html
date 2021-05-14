@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<!--Description-->
+
+
+
+    <meta name="description" content="坚持、坚持、坚持"/>
+
+
+<!--Author-->
+
+    <meta name="author" content="39"/>
+
+
+<!--Open Graph Title-->
+
+    <meta property="og:title" content="python 基本语法"/>
+
+
+<!--Open Graph Description-->
+
+    <meta property="og:description" content="坚持、坚持、坚持"/>
+
+
+<!--Open Graph Site Name-->
+    <meta property="og:site_name" content="39 Blog"/>
+
+<!--Type page-->
+
+    <meta property="og:type" content="article"/>
+
+
+<!--Page Cover-->
+
+
+    <meta property="og:image" content="https://aixieluo.github.io/img/home-bg.jpg"/>
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+
+
+
+
+    <meta name="twitter:image" content="https://aixieluo.github.io/img/home-bg.jpg"/>
+
+
+<!-- Title -->
+
+<title>python 基本语法 | 39 Blog</title>
+
+<!-- Bootstrap Core CSS -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+
+<!-- Custom CSS -->
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<!-- Custom Fonts -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css" />
+<link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css" />
+<link href="//fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Gallery -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/featherlight@1.4.0/src/featherlight.css" integrity="sha256-30DV/STftlyQ6v8yaOWlabammvCYtRJERLj/m0b3zno=" crossorigin="anonymous">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/lightgallery@1.6.11/dist/css/lightgallery.min.css">
+
+<!-- favicon -->
+
+<link rel="icon" href="/img/favicon.png"/>
+
+
+
+    <!-- Google Analytics -->
+    
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<!-- Head tag -->
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top bg-transparent position-absolute w-100 p-0" id="nav">
+    <div class="container pl-0 pr-0">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <a class="navbar-brand text-white p-1 pl-3" href="/">39 Blog</a>
+        </div>
+        <div class="navbar-nav float-right">
+            <button class="btn btn-link search-btn navbar-item" data-toggle="modal" data-target="#searchModal">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 text-center">
+                <div class="post-heading text-white">
+                    <h1>python 基本语法</h1>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Main Content -->
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                
+                    <span class="meta d-inline-block">
+    
+        <i class="far fa-bookmark fa-fw"></i>
+        
+
+<a href="/categories/python/">python</a>
+
+    
+    
+    <!-- Date -->
+    
+        <span class="post-meta-split">&nbsp;|&nbsp;</span>
+        <i class="far fa-calendar-check fa-fw"></i>
+        2017-11-22
+    
+    <!-- word count and read count -->
+    
+
+    
+
+    
+</span>  
+                
+                <p>python 基础语法入门</p>
+<span id="more"></span>
+
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><h4 id="1-整数"><a href="#1-整数" class="headerlink" title="1.整数"></a>1.整数</h4><blockquote>
+<p><code>1</code>, <code>100</code>, <code>-10</code></p>
+</blockquote>
+<h4 id="2-浮点数"><a href="#2-浮点数" class="headerlink" title="2.浮点数"></a>2.浮点数</h4><blockquote>
+<p><code>3.14</code>, <code>-.9</code>, 对于很大或者很小的浮点数，采用科学计数法表示，<code>1.23e9</code>, <code>12.3e8</code><br>整数和浮点数在计算机内部存储的方式是不同的，整数运算永远是精确的（除法难道也是精确的？是的！），而浮点数运算则可能会有四舍五入的误差。</p>
+</blockquote>
+<h4 id="3-字符串"><a href="#3-字符串" class="headerlink" title="3.字符串"></a>3.字符串</h4><blockquote>
+<p>字符串是以’’或””括起来的任意文本，比如’abc’，”xyz”等等。<br>请注意，’’或””本身只是一种表示方式，不是字符串的一部分，因此，字符串’abc’只有a，b，c这3个字符。</p>
+</blockquote>
+<h4 id="4-布尔值"><a href="#4-布尔值" class="headerlink" title="4.布尔值"></a>4.布尔值</h4><blockquote>
+<p><code>True</code>, <code>False</code> （请注意大小写）<br>布尔值可以用and、or和not运算。</p>
+</blockquote>
+<h4 id="5-空值"><a href="#5-空值" class="headerlink" title="5.空值"></a>5.空值</h4><blockquote>
+<p>空值是Python里一个特殊的值，用 <code>None</code> 表示。<code>None</code> 不能理解为0，因为0是有意义的，而 <code>None</code> 是一个特殊的空值。</p>
+</blockquote>
+<h3 id="print语句"><a href="#print语句" class="headerlink" title="print语句"></a>print语句</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; print 300</span><br><span class="line">300    #运行结果</span><br><span class="line">&gt;&gt;&gt; print 100 + 200</span><br><span class="line">300    #运行结果</span><br><span class="line">&gt;&gt;&gt; print &#x27;100 + 200 =&#x27;, 100 + 200</span><br><span class="line">100 + 200 = 300     #运行结果</span><br></pre></td></tr></table></figure>
+
+<h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><blockquote>
+<p>Python的注释以 <code>#</code> 开头，后面的文字直到行尾都算注释</p>
+</blockquote>
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><blockquote>
+<p>在Python程序中，变量是用一个变量名表示，变量名必须是<strong> <code>大小写英文</code>、 <code>数字</code> 和 <code>下划线</code> 的组合，且不能用数字开头<strong></p>
+</blockquote>
+<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><blockquote>
+<p><code>Hello, World!</code><br>如果字符串既包含 <code>&#39;</code> 又包含 <code>&quot;</code>, 则需要对字符串的某些特殊字符进行 <code>转义</code><br>常用转义字符<br>\n 表示换行<br>\t 表示一个制表符<br>\ 表示 \ 字符本身</p>
+</blockquote>
+<h3 id="Raw字符串与多行字符串"><a href="#Raw字符串与多行字符串" class="headerlink" title="Raw字符串与多行字符串"></a>Raw字符串与多行字符串</h3><h4 id="Raw字符串"><a href="#Raw字符串" class="headerlink" title="Raw字符串"></a>Raw字符串</h4><blockquote>
+<p><code>r&#39;...&#39;</code><br>Raw字符串内部不需要转义<br>但是 <code>r&#39;...&#39;</code> 表示法不能表示多行字符串，也不能表示包含 <code>&#39;</code> 和 <code>&quot;</code> 的字符串</p>
+</blockquote>
+<h4 id="多行字符串"><a href="#多行字符串" class="headerlink" title="多行字符串"></a>多行字符串</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#x27;&#x27;&#x27;Line1</span><br><span class="line">Line2</span><br><span class="line">Line3&#x27;&#x27;&#x27;</span><br><span class="line"># 与下面字符串意义相同</span><br><span class="line">&#x27;Line1\nLine2\nLine3&#x27;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>r’’’…’’’<br>在多行字符串前面添加 <code>r</code> ，把这个多行字符串也变成一个raw字符串</p>
+</blockquote>
+<h3 id="Unicode字符串"><a href="#Unicode字符串" class="headerlink" title="Unicode字符串"></a>Unicode字符串</h3><blockquote>
+<p>如果中文字符串在Python环境下遇到 UnicodeDecodeError，这是因为.py文件保存的格式有问题。<br>可以在第一行添加注释<br><code># -*- coding: utf-8 -*-</code><br>目的是告诉Python解释器，用UTF-8编码读取源代码。</p>
+</blockquote>
+<h3 id="列表list"><a href="#列表list" class="headerlink" title="列表list"></a>列表list</h3><blockquote>
+<p>list是一种有序的集合，可以随时添加和删除其中的元素。<br>list是数学意义上的有序集合，也就是说，list中的元素是按照顺序排列的。<br>list的索引从0开始<br>索引可以倒序访问list<br>使用索引越界时，会报错 <code>IndexError: list index out of range</code><br>添加新元素时使用方法 <code>append()</code>, 会把新元素追加到list的末尾<br>也可以使用方法 <code>insert()</code>, <code>insert()</code> 接受两个参数，第一个是索引号，第二个是待追加的新元素<br>删除元素使用方法 <code>pop()</code>, 接受一个参数，索引号<br>替换元素可以直接使用索引号重新赋值</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">L = [&#x27;a&#x27;, &#x27;b&#x27;, &#x27;c&#x27;]</span><br><span class="line">L[0] # &#x27;a&#x27;</span><br><span class="line">L[-1] # &#x27;c&#x27;</span><br><span class="line">L.append(&#x27;d&#x27;)# [&#x27;a&#x27;, &#x27;b&#x27;, &#x27;c&#x27;, &#x27;d&#x27;]</span><br><span class="line">L.insert(1, &#x27;A&#x27;) # [&#x27;a&#x27;, &#x27;A&#x27;, &#x27;b&#x27;, &#x27;c&#x27;, &#x27;d&#x27;]</span><br><span class="line">L.pop(1) # [&#x27;a&#x27;, &#x27;b&#x27;, &#x27;c&#x27;, &#x27;d&#x27;]</span><br><span class="line">L[0] = &#x27;A&#x27; # [&#x27;A&#x27;, &#x27;b&#x27;, &#x27;c&#x27;, &#x27;d&#x27;]</span><br></pre></td></tr></table></figure>
+
+<h3 id="元组tuple"><a href="#元组tuple" class="headerlink" title="元组tuple"></a>元组tuple</h3><blockquote>
+<p>tuple是另一种有序的列表，中文翻译为“ 元组 ”。tuple 和 list 非常类似，但是，tuple一旦创建完毕，就不能修改了。<br>创建tuple和创建list唯一不同之处是用 <code>( )</code> 替代了 <code>[ ]</code>。<br>因为 <code>()</code> 既可以表示tuple，又可以作为括号表示运算时的优先级，所以Python规定单个元素的tuple，需要多加一个 <code>,</code>, 例如 <code>(1,)</code>, 这样就避免了歧义</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">T = (1, 2, 3, 4, 5)</span><br><span class="line">T = (1, 2, [3, 4]) # 此时T中的list为可变，所以tuple也“可变”了</span><br></pre></td></tr></table></figure>
+
+<h3 id="条件判断语句"><a href="#条件判断语句" class="headerlink" title="条件判断语句"></a>条件判断语句</h3><h4 id="if"><a href="#if" class="headerlink" title="if"></a>if</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">if True:</span><br><span class="line">	print &#x27;success&#x27;</span><br></pre></td></tr></table></figure>
+
+<h4 id="if-else"><a href="#if-else" class="headerlink" title="if-else"></a>if-else</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">if True:</span><br><span class="line">	print &#x27;success&#x27;</span><br><span class="line">else:</span><br><span class="line">	print &#x27;error&#x27;</span><br></pre></td></tr></table></figure>
+
+<h4 id="if-elif-else"><a href="#if-elif-else" class="headerlink" title="if-elif-else"></a>if-elif-else</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">n = 1</span><br><span class="line">if n == 1:</span><br><span class="line">	print n</span><br><span class="line">elif n == 2:</span><br><span class="line">	print n</span><br><span class="line">else</span><br><span class="line">	print &#x27;error&#x27;</span><br></pre></td></tr></table></figure>
+
+<h4 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">L = [&#x27;Adam&#x27;, &#x27;Lisa&#x27;, &#x27;Bart&#x27;]</span><br><span class="line">for name in L:</span><br><span class="line">    print name</span><br></pre></td></tr></table></figure>
+
+<h4 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">N = 10</span><br><span class="line">x = 0</span><br><span class="line">while x &lt; N:</span><br><span class="line">    print x</span><br><span class="line">    x = x + 1</span><br></pre></td></tr></table></figure>
+
+<h4 id="break"><a href="#break" class="headerlink" title="break"></a>break</h4><blockquote>
+<p>用 for 循环或者 while 循环时，如果要在循环体内直接退出循环，可以使用 break 语句。</p>
+</blockquote>
+<h4 id="continue"><a href="#continue" class="headerlink" title="continue"></a>continue</h4><blockquote>
+<p>在循环过程中，可以用break退出当前循环，还可以用continue跳过后续循环代码，继续下一次循环。</p>
+</blockquote>
+<h3 id="dict"><a href="#dict" class="headerlink" title="dict"></a>dict</h3><h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><blockquote>
+<p>花括号 {} 表示这是一个dict，然后按照 key: value, 写出来即可。最后一个 key: value 的逗号可以省略。<br>由于dict也是集合，len() 函数可以计算任意集合的大小，一个 key-value 算一个<br>dict的第一个特点是查找速度快，无论dict有10个元素还是10万个元素，查找速度都一样。而list的查找速度随着元素增加而逐渐下降。<br>不过dict的查找速度快不是没有代价的，dict的缺点是占用内存大，还会浪费很多内容，list正好相反，占用内存小，但是查找速度慢。<br>由于dict是按 key 查找，所以，在一个dict中，key不能重复。<br>dict的第二个特点就是存储的key-value序对是没有顺序的！<br>dict的第三个特点是作为 key 的元素必须不可变，Python的基本类型如字符串、整数、浮点数都是不可变的，都可以作为 key。但是list是可变的，就不能作为 key。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">d = &#123;</span><br><span class="line">    &#x27;Adam&#x27;: 95,</span><br><span class="line">    &#x27;Lisa&#x27;: 85,</span><br><span class="line">    &#x27;Bart&#x27;: 59</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="访问dict"><a href="#访问dict" class="headerlink" title="访问dict"></a>访问dict</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 方式1</span><br><span class="line">d[&#x27;Adam&#x27;]</span><br><span class="line"># 方式2</span><br><span class="line">d.get(&#x27;Adam&#x27;)</span><br></pre></td></tr></table></figure>
+
+<h4 id="更新dict"><a href="#更新dict" class="headerlink" title="更新dict"></a>更新dict</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">d[&#x27;Adam&#x27;] = 90</span><br></pre></td></tr></table></figure>
+
+<h4 id="遍历dict"><a href="#遍历dict" class="headerlink" title="遍历dict"></a>遍历dict</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">for k in d:</span><br><span class="line">	print k</span><br><span class="line"># Lisa</span><br><span class="line"># Adam</span><br><span class="line"># Bart</span><br></pre></td></tr></table></figure>
+
+<h3 id="set"><a href="#set" class="headerlink" title="set"></a>set</h3><h4 id="介绍-1"><a href="#介绍-1" class="headerlink" title="介绍"></a>介绍</h4><blockquote>
+<p>set 持有一系列元素，这一点和 list 很像，但是set的元素没有重复，而且是无序的，这点和 dict 的 key很像。<br>创建 set 的方式是调用 set() 并传入一个 list，list的元素将作为set的元素。<br>因为set不能包含重复的元素，所以，当我们传入包含重复元素的 list时，set会自动去掉重复的元素。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s = set([&#x27;A&#x27;, &#x27;B&#x27;, &#x27;C&#x27;])</span><br></pre></td></tr></table></figure>
+
+<h4 id="访问set"><a href="#访问set" class="headerlink" title="访问set"></a>访问set</h4><blockquote>
+<p>由于set存储的是无序集合，所以我们没法通过索引来访问.<br>访问 set中的某个元素实际上就是判断一个元素是否在set中。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#x27;A&#x27; in s # True</span><br><span class="line">&#x27;D&#x27; in s # False</span><br></pre></td></tr></table></figure>
+
+<h4 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h4><blockquote>
+<p>set的内部结构和dict很像，唯一区别是不存储value，因此，判断一个元素是否在set中速度很快。<br>set存储的元素和dict的key类似，必须是不变对象，因此，任何可变对象是不能放入set中的。</p>
+</blockquote>
+<h4 id="遍历set"><a href="#遍历set" class="headerlink" title="遍历set"></a>遍历set</h4><blockquote>
+<p>由于 set 也是一个集合，所以，遍历 set 和遍历 list 类似，都可以通过 for 循环实现。</p>
+</blockquote>
+<h4 id="更新set"><a href="#更新set" class="headerlink" title="更新set"></a>更新set</h4><blockquote>
+<p>由于set存储的是一组不重复的无序元素，因此，更新set主要做两件事：<br>一是把新的元素添加到set中，二是把已有元素从set中删除。<br>添加元素时，用set的add()方法，如果添加的元素已经存在于set中，add()不会报错，但是不会加进去了。<br>删除set中的元素时，用set的remove()方法，如果删除的元素不存在set中，remove()会报错。<br>所以用add()可以直接添加，而remove()前需要判断。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s.add(&#x27;A&#x27;) # set([&#x27;A&#x27;, &#x27;B&#x27;, &#x27;C&#x27;])</span><br><span class="line">s.remove(&#x27;A&#x27;) # set([&#x27;B&#x27;, &#x27;C&#x27;])</span><br></pre></td></tr></table></figure>
+
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><h4 id="介绍-2"><a href="#介绍-2" class="headerlink" title="介绍"></a>介绍</h4><blockquote>
+<p>Python内置了很多函数，我们可以直接调用。<br>可以直接从Python的官方网站查看文档：<a target="_blank" rel="noopener" href="http://docs.python.org/2/library/functions.html">Python函数</a></p>
+</blockquote>
+<h4 id="自定义函数"><a href="#自定义函数" class="headerlink" title="自定义函数"></a>自定义函数</h4><blockquote>
+<p>在Python中，定义一个函数要使用 def 语句，依次写出函数名、括号、括号中的参数和冒号:，然后，在缩进块中编写函数体，函数的返回值用 return 语句返回。<br>函数还可以返回多个返回值<br>在语法上，返回一个tuple可以省略括号，而多个变量可以同时接收一个tuple，按位置赋给对应的值，所以，Python的函数返回多值其实就是返回一个tuple，但写起来更方便。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">def my_fn(name, age):</span><br><span class="line">	return name, age</span><br><span class="line">name, age = my_fn(&#x27;A&#x27;, 20) # name=&#x27;A&#x27; age=20</span><br></pre></td></tr></table></figure>
+
+<h4 id="定义默认参数"><a href="#定义默认参数" class="headerlink" title="定义默认参数"></a>定义默认参数</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">def my_fn(name=&#x27;A&#x27;):</span><br><span class="line">	return name</span><br><span class="line">my_fn() # &#x27;A&#x27;</span><br></pre></td></tr></table></figure>
+
+<h4 id="定义可变参数"><a href="#定义可变参数" class="headerlink" title="定义可变参数"></a>定义可变参数</h4><blockquote>
+<p>可变参数的名字前面有个 * 号，我们可以传入0个、1个或多个参数给可变参数<br>可变参数也不是很神秘，Python解释器会把传入的一组参数组装成一个tuple传递给可变参数，因此，在函数内部，直接把变量 args 看成一个 tuple 就好了。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">def fn(*args):</span><br><span class="line">	print args</span><br></pre></td></tr></table></figure>
+
+<h3 id="切片"><a href="#切片" class="headerlink" title="切片"></a>切片</h3><h4 id="正序切片"><a href="#正序切片" class="headerlink" title="正序切片"></a>正序切片</h4><blockquote>
+<p><code>L[x:y:z]</code> 如例所示，L是一个list，x，y代表索引号（x包含本身，y不包含本身），z代表间隔数<br>如果x是0，还可以省略<br>如果一直取到最后一位，则y省略<br>z默认为1，省略不写</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">L = [1, 2, 3, 4]</span><br><span class="line">L[:] # 从开始取到最后一个，也就是一个完整的新的list</span><br><span class="line">L[:2] # [1, 2]</span><br><span class="line">L[1:] # [2, 3, 4]</span><br><span class="line">L[::2] # [1, 3]</span><br></pre></td></tr></table></figure>
+
+<h4 id="倒序切片"><a href="#倒序切片" class="headerlink" title="倒序切片"></a>倒序切片</h4><blockquote>
+<p>Python支持L[-1]取倒数第一个元素，那么它同样支持倒数切片<br>倒数第一个元素的索引是-1。倒序切片包含起始索引，不包含结束索引。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">L[-4:-1] # [1, 2, 3]</span><br><span class="line">L[-4:-1:2] # [1, 3]</span><br></pre></td></tr></table></figure>
+
+<h4 id="字符串切片"><a href="#字符串切片" class="headerlink" title="字符串切片"></a>字符串切片</h4><blockquote>
+<p>可将字符串看成list</p>
+</blockquote>
+<h3 id="迭代"><a href="#迭代" class="headerlink" title="迭代"></a>迭代</h3><h4 id="介绍-3"><a href="#介绍-3" class="headerlink" title="介绍"></a>介绍</h4><blockquote>
+<p>通过 <code>for ... in</code> 完成迭代<br>Python 的 for循环不仅可以用在list或tuple上，还可以作用在其他任何可迭代对象上。</p>
+</blockquote>
+<h4 id="索引迭代"><a href="#索引迭代" class="headerlink" title="索引迭代"></a>索引迭代</h4><blockquote>
+<p>Python中，迭代永远是取出元素本身，而非元素的索引。<br>对于有序集合，元素确实是有索引的。有的时候，我们确实想在 for 循环中拿到索引，此时使用 <code>enumerate() 函数</code>。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; L = [&#x27;Adam&#x27;, &#x27;Lisa&#x27;, &#x27;Bart&#x27;, &#x27;Paul&#x27;]</span><br><span class="line">&gt;&gt;&gt; for index, name in enumerate(L):</span><br><span class="line">...     print index, &#x27;-&#x27;, name</span><br><span class="line">... </span><br><span class="line">0 - Adam</span><br><span class="line">1 - Lisa</span><br><span class="line">2 - Bart</span><br><span class="line">3 - Paul</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>实际 <code>enumerate()</code> 所做的是将[‘Adam’, ‘Lisa’, ‘Bart’, ‘Paul’]变成了[(0, ‘Adam’), (1, ‘Lisa’), (2, ‘Bart’), (3, ‘Paul’)]</p>
+</blockquote>
+<h4 id="迭代dict"><a href="#迭代dict" class="headerlink" title="迭代dict"></a>迭代dict</h4><blockquote>
+<p>dict 对象有一个 values() 方法，这个方法把dict转换成一个包含所有value的list<br>dict除了values()方法外，还有一个 itervalues() 方法，用 itervalues() 方法替代 values() 方法，迭代效果完全一样<br>values() 方法实际上把一个 dict 转换成了包含 value 的list。但是 itervalues() 方法不会转换，它会在迭代过程中依次从 dict 中取出 value，所以 itervalues() 方法比 values() 方法节省了生成 list 所需的内存。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">d = &#123; &#x27;Adam&#x27;: 95, &#x27;Lisa&#x27;: 85, &#x27;Bart&#x27;: 59 &#125;</span><br><span class="line">print d.values()</span><br><span class="line"># [85, 95, 59]</span><br><span class="line">for v in d.values():</span><br><span class="line">    print v</span><br><span class="line"># 85</span><br><span class="line"># 95</span><br><span class="line"># 59</span><br><span class="line"></span><br><span class="line">d = &#123; &#x27;Adam&#x27;: 95, &#x27;Lisa&#x27;: 85, &#x27;Bart&#x27;: 59 &#125;</span><br><span class="line">print d.itervalues()</span><br><span class="line"># &lt;dictionary-valueiterator object at 0x106adbb50&gt;</span><br><span class="line">for v in d.itervalues():</span><br><span class="line">    print v</span><br><span class="line"># 85</span><br><span class="line"># 95</span><br><span class="line"># 59</span><br></pre></td></tr></table></figure>
+
+<h4 id="迭代dict的key与value"><a href="#迭代dict的key与value" class="headerlink" title="迭代dict的key与value"></a>迭代dict的key与value</h4><blockquote>
+<p>items() 方法把dict对象转换成了包含tuple的list，我们对这个list进行迭代，可以同时获得key和value<br>和 values() 有一个 itervalues() 类似， items() 也有一个对应的 iteritems()，iteritems() 不把dict转换成list，而是在迭代过程中不断给出 tuple，所以， iteritems() 不占用额外的内存。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">for key, value in d.items():</span><br><span class="line">     print key, &#x27;:&#x27;, value      </span><br><span class="line"># Lisa : 85</span><br><span class="line"># Adam : 95</span><br><span class="line"># Bart : 59</span><br></pre></td></tr></table></figure>
+
+<h3 id="列表生成式"><a href="#列表生成式" class="headerlink" title="列表生成式"></a>列表生成式</h3><blockquote>
+<p>要生成 <code>[1*1, 2*2, 3*3, ... 100*100]</code> 的数据时，Python有一种特殊的列表生成式可以用简洁的代码生成list</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[n * n for n in range(1, 101)] # [1, 4, 9, 16, ... 10000]</span><br></pre></td></tr></table></figure>
+
+<h4 id="条件过滤"><a href="#条件过滤" class="headerlink" title="条件过滤"></a>条件过滤</h4><blockquote>
+<p>添加if判断后只有满足条件的项才会加入list中</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[n * n for n in range(1, 101) if n % 2 == 0] # [4, 16, 36, 64, ... 10000]</span><br></pre></td></tr></table></figure>
+
+<h4 id="多层表达式"><a href="#多层表达式" class="headerlink" title="多层表达式"></a>多层表达式</h4><blockquote>
+<p>for循环可以嵌套，因此，在列表生成式中，也可以用多层 for 循环来生成列表。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[m + n for m in &#x27;ABC&#x27; for n in &#x27;123&#x27;] # [&#x27;A1&#x27;, &#x27;A2&#x27;, &#x27;A3&#x27;, &#x27;B1&#x27;, &#x27;B2&#x27;, &#x27;B3&#x27;, &#x27;C1&#x27;, &#x27;C2&#x27;, &#x27;C3&#x27;]</span><br></pre></td></tr></table></figure>
+            </div>
+
+            <!-- Post information -->
+            
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 post-tags">
+        
+            <i class="fas fa-tag" style="vertical-align: middle;font-size: .8rem;"></i>
+            tags:&nbsp;
+            
+            
+        
+            <a href="/tags/python/">#python</a>
+        
+    </div>
+
+            
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+        <ul class="pagination d-block text-center">
+            
+                <li class="previous page-item d-inline"><a href="/2021/03/22/%E5%88%86%E5%B8%83%E5%BC%8F%E3%80%81%E9%9B%86%E7%BE%A4%E3%80%81%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E7%9A%84%E5%8C%BA%E5%88%AB%E4%B8%8E%E8%81%94%E7%B3%BB/" class="page-link float-left">&larr;  Newer Posts</a></li>
+            
+            
+                <li class="next page-item d-inline"><a href="/2017/09/27/zsh-autosuggestions%20%E4%B8%AD%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%88%AB%E5%90%8D/" class="page-link float-right">Older Posts  &rarr;</a></li>
+            
+        </ul>
+    </div>
+
+
+            
+                <!-- Comments -->
+                
+
+                
+
+            
+
+        </div>
+    </div>
+</article> 
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    <style>
+        #toc-content .toc-link::before {
+            background-color: transparent;
+            max-height: 25px;
+        }
+
+        #toc-content .toc-link.is-active-link::before {
+            background-color: #404040;
+        }
+    </style>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <div class="ui-toc dropup scrollspy-body pull-right" style="right: 3%;">
+        <button type="button" class="toc-btn btn btn-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+            <i class="fas fa-list"></i>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right p-2"  aria-labelledby="tocLabel">
+            <div class="toc-widget">
+                <div id="toc-content" class="text-truncate">
+                </div>
+            </div>
+            <div class="toc-menu pt-3 pl-4">
+                <a class="expand-toggle d-block py-1" href="#"><span class="expand-text">Expand all</span><span class="close-text" style="display: none;">Collapse all</span></a>
+                <a class="back-to-top d-block py-1" href="#">Back to top</a>
+                <a class="go-to-bottom d-block py-1" href="#">Go to bottom</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        tocbot.init({
+            // Where to render the table of contents.
+            tocSelector: '#toc-content',
+            // Where to grab the headings to build the table of contents.
+            contentSelector: 'article',
+            // Which headings to grab inside of the contentSelector element.
+            headingSelector: 'h1, h2, h3',
+            // For headings inside relative or absolute positioned containers within content.
+            hasInnerContainers: true,
+        });
+    </script>
+
+
+    
+
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 text-center">
+                <ul class="list-inline">
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <ul class="copyright footer-menu list-inline">
+                    
+                    
+                        <li class="list-inline-item">
+                            
+                            
+                            <a href="/">
+                                
+                                    Home
+                                
+                            </a>
+                        </li>
+                    
+                        <li class="list-inline-item">
+                            
+                                <span class="copyright-split">&nbsp;|&nbsp;</span>
+                            
+                            
+                            <a href="/archives">
+                                
+                                    Archives
+                                
+                            </a>
+                        </li>
+                    
+                        <li class="list-inline-item">
+                            
+                                <span class="copyright-split">&nbsp;|&nbsp;</span>
+                            
+                            
+                            <a href="/tags">
+                                
+                                    Tags
+                                
+                            </a>
+                        </li>
+                    
+                        <li class="list-inline-item">
+                            
+                                <span class="copyright-split">&nbsp;|&nbsp;</span>
+                            
+                            
+                            <a href="/categories">
+                                
+                                    Categories
+                                
+                            </a>
+                        </li>
+                    
+                        <li class="list-inline-item">
+                            
+                                <span class="copyright-split">&nbsp;|&nbsp;</span>
+                            
+                            
+                            <a href="/about">
+                                
+                                    About
+                                
+                            </a>
+                        </li>
+                    
+                </ul>
+                <p class="copyright footer-author">
+                    &copy; -2021 
+                    <a rel="external" class="copyright-link" href="" target="_blank">39</a><br/>
+                    Powered by <a rel="external" class="copyright-link" href="https://hexo.io/" target="_blank">Hexo</a>  
+                    <span class="copyright-split">&nbsp;|&nbsp;&nbsp;</span>
+                    Theme <a rel="external" class="copyright-link" href="https://github.com/luswdev/hexo-theme-clean.git" target="_blank">Clean</a>
+                    
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    <!-- jQuery -->
+<script src="//cdn.jsdelivr.net/npm/jquery@2.1.4/dist/jquery.min.js"></script>
+
+<!-- For drop down -->
+<script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+<!-- Gallery -->
+<script src="//cdn.jsdelivr.net/npm/lightgallery@1.6.11/dist/js/lightgallery-all.min.js"></script>
+<!-- Busuanzi -->
+
+
+<!-- Search script -->
+
+<script src="/js/search.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        searchFunc( '/search.xml' , 'searchInput', 'searchResult');
+    });
+</script>
+
+
+
+<script src="/js/main.js"></script>
+
+
+
+    <!-- Search Modal -->
+    <!-- Modal -->
+<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+        <div class="modal-content overflow-auto">
+            <div class="modal-header">
+                <input type="text" class="form-control" placeholder="Searching Keywords..." id="searchInput">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div id="searchResult">
+                    <div class="search-empty text-center text-muted p-5">
+                        <i class="far fa-meh"></i>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

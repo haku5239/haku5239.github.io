@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<!--Description-->
+
+
+
+    <meta name="description" content="坚持、坚持、坚持"/>
+
+
+<!--Author-->
+
+    <meta name="author" content="39"/>
+
+
+<!--Open Graph Title-->
+
+    <meta property="og:title" content="GitHub Webhook"/>
+
+
+<!--Open Graph Description-->
+
+    <meta property="og:description" content="坚持、坚持、坚持"/>
+
+
+<!--Open Graph Site Name-->
+    <meta property="og:site_name" content="39 Blog"/>
+
+<!--Type page-->
+
+    <meta property="og:type" content="article"/>
+
+
+<!--Page Cover-->
+
+
+    <meta property="og:image" content="https://aixieluo.github.io/img/home-bg.jpg"/>
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+
+
+
+
+    <meta name="twitter:image" content="https://aixieluo.github.io/img/home-bg.jpg"/>
+
+
+<!-- Title -->
+
+<title>GitHub Webhook | 39 Blog</title>
+
+<!-- Bootstrap Core CSS -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+
+<!-- Custom CSS -->
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<!-- Custom Fonts -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css" />
+<link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css" />
+<link href="//fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Gallery -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/featherlight@1.4.0/src/featherlight.css" integrity="sha256-30DV/STftlyQ6v8yaOWlabammvCYtRJERLj/m0b3zno=" crossorigin="anonymous">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/lightgallery@1.6.11/dist/css/lightgallery.min.css">
+
+<!-- favicon -->
+
+<link rel="icon" href="/img/favicon.png"/>
+
+
+
+    <!-- Google Analytics -->
+    
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<!-- Head tag -->
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top bg-transparent position-absolute w-100 p-0" id="nav">
+    <div class="container pl-0 pr-0">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <a class="navbar-brand text-white p-1 pl-3" href="/">39 Blog</a>
+        </div>
+        <div class="navbar-nav float-right">
+            <button class="btn btn-link search-btn navbar-item" data-toggle="modal" data-target="#searchModal">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 text-center">
+                <div class="post-heading text-white">
+                    <h1>GitHub Webhook</h1>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Main Content -->
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                
+                    <span class="meta d-inline-block">
+    
+        <i class="far fa-bookmark fa-fw"></i>
+        
+
+<a href="/categories/GitHub/">GitHub</a>
+
+    
+    
+    <!-- Date -->
+    
+        <span class="post-meta-split">&nbsp;|&nbsp;</span>
+        <i class="far fa-calendar-check fa-fw"></i>
+        2017-07-20
+    
+    <!-- word count and read count -->
+    
+
+    
+
+    
+</span>  
+                
+                <p>托管于 <a target="_blank" rel="noopener" href="https://github.com/">GitHub</a> 的项目，当一个功能在本地写完调试完没有问题之后，想要提交上去更新到服务器，测试一下是否有问题，当本地提交到 GitHub 后却还要去服务器更新一下，其实有时候感觉还是小麻烦的~</p>
+<span id="more"></span>
+
+<h3 id="部署公钥"><a href="#部署公钥" class="headerlink" title="部署公钥"></a>部署公钥</h3><p>移动到当前用户目录下，创建公钥和私钥（当然此处只用到公钥）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd</span><br><span class="line">$ sudo ssh-keygen -t rsa -C &quot;your_github_email&quot;</span><br></pre></td></tr></table></figure>
+
+<p>公钥在 <code>/home/aixieluo/.ssh</code> 目录下，此处的 aixieluo 是我的用户名称，登录 <a target="_blank" rel="noopener" href="https://github.com/">GitHub</a> ，进入 <code>Settings</code> =&gt; <code>SSH and GPG keys</code> =&gt; <code>New SSH key</code> ，Title 自定义输入，Key 则是 <code>/home/aixieluo/.ssh/ide_rsa.pub</code> 的内容</p>
+<h3 id="给-www-data-分配目录权限，部署公钥"><a href="#给-www-data-分配目录权限，部署公钥" class="headerlink" title="给 www-data 分配目录权限，部署公钥"></a>给 www-data 分配目录权限，部署公钥</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ sudo mkdir /var/www/.ssh</span><br><span class="line">$ sudo chown -R www-data:www-data /var/www</span><br><span class="line">$ cd /var/www</span><br><span class="line">$ sudo -Hu www-data ssh-keygen -t rsa </span><br></pre></td></tr></table></figure>
+
+<p>生成的公钥在 <code>/var/www/.ssh</code> 目录下，登录 <a target="_blank" rel="noopener" href="https://github.com/">GitHub</a> ，进入需要同步的项目的主页，进入 <code>Settings</code> =&gt; <code>Deploy keys</code> =&gt; <code>Add deploy key</code> ，Title 自定义输入，Key 则是 <code>/var/www/.ssh/ide_rsa.pub</code> 的内容</p>
+<h3 id="clone-项目"><a href="#clone-项目" class="headerlink" title="clone 项目"></a>clone 项目</h3><p>这部是最为关键的，必须使用 www-data 用户 clone 项目，这样自动更新项目时会默认使用 www-data 用户</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd /var/www </span><br><span class="line">$ sudo -Hu www-data git clone git@github.com:aixieluo/study.git</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置钩子"><a href="#配置钩子" class="headerlink" title="配置钩子"></a>配置钩子</h3><p>依旧是登录 <a target="_blank" rel="noopener" href="https://github.com/">GitHub</a> ，进入需要同步的项目的主页，进入 <code>Settings</code> =&gt; <code>WebHooks</code> =&gt; <code>Add webhook</code> ，以下是我的配置：</p>
+<p><div class="img-item" data-src="../img/webhooks/img1.png" data-sub-html=".caption"><img src="../img/webhooks/img1.png" alt="webhook"><div class="img-caption d-block text-center"><span class="center-caption text-muted border-bottom">webhook</span></div></div></p>
+<p>此处例子项目是 Laravel5.4 ，配置过程如下</p>
+<blockquote>
+<p><strong>api.php</strong> 文件的配置： <code>Route::post(&#39;deploy&#39;, &#39;DeploymentController@deploy&#39;);</code><br><strong>VerifyCsrfToken.php</strong> 文件的配置： <code>protected $except = [&#39;api/deploy&#39;];</code> ，此处为了排除 <strong>csrf</strong> 验证<br><strong>deploy</strong> 方法实现如下：<br>   <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">public function deploy(Request $request) &#123;</span><br><span class="line">    $commands = [&#x27;cd /var/www/study&#x27;, &#x27;git pull&#x27;];</span><br><span class="line">    $signature = $request-&gt;header(&#x27;X-Hub-Signature&#x27;);</span><br><span class="line">    $payload = file_get_contents(&#x27;php://input&#x27;);</span><br><span class="line">    if ($this-&gt;isFormGitHub($payload, $signature)) &#123;</span><br><span class="line">        foreach ($commands as $command) &#123;</span><br><span class="line">            shell_exec($command);</span><br><span class="line">        &#125;</span><br><span class="line">        http_response_code(200);</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        abort(403);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public function isFormGitHub($payload, $signature) &#123;</span><br><span class="line">    return &#x27;sha1=&#x27; . hash_hmac(&#x27;sha1&#x27;, $payload, env(&#x27;GITHUB_DEPLOY_TOKEN&#x27;), false) === $signature;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>此处的 <code>GITHUB_DEPLOY_TOKEN</code> 就是在 GitHub 的 webhook 里配置的 Secret</p>
+</blockquote>
+
+            </div>
+
+            <!-- Post information -->
+            
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 post-tags">
+        
+            <i class="fas fa-tag" style="vertical-align: middle;font-size: .8rem;"></i>
+            tags:&nbsp;
+            
+            
+        
+            <a href="/tags/GitHub/">#GitHub</a>
+        
+    </div>
+
+            
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+        <ul class="pagination d-block text-center">
+            
+                <li class="previous page-item d-inline"><a href="/2017/07/25/git%20pull%20request/" class="page-link float-left">&larr;  Newer Posts</a></li>
+            
+            
+                <li class="next page-item d-inline"><a href="/2017/07/20/%E7%94%A8%E6%88%B7%E7%BB%84%E3%80%81%E7%94%A8%E6%88%B7%E3%80%81%E8%B5%8B%E4%BA%88%E6%9D%83%E9%99%90/" class="page-link float-right">Older Posts  &rarr;</a></li>
+            
+        </ul>
+    </div>
+
+
+            
+                <!-- Comments -->
+                
+
+                
+
+            
+
+        </div>
+    </div>
+</article> 
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    <style>
+        #toc-content .toc-link::before {
+            background-color: transparent;
+            max-height: 25px;
+        }
+
+        #toc-content .toc-link.is-active-link::before {
+            background-color: #404040;
+        }
+    </style>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <div class="ui-toc dropup scrollspy-body pull-right" style="right: 3%;">
+        <button type="button" class="toc-btn btn btn-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+            <i class="fas fa-list"></i>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right p-2"  aria-labelledby="tocLabel">
+            <div class="toc-widget">
+                <div id="toc-content" class="text-truncate">
+                </div>
+            </div>
+            <div class="toc-menu pt-3 pl-4">
+                <a class="expand-toggle d-block py-1" href="#"><span class="expand-text">Expand all</span><span class="close-text" style="display: none;">Collapse all</span></a>
+                <a class="back-to-top d-block py-1" href="#">Back to top</a>
+                <a class="go-to-bottom d-block py-1" href="#">Go to bottom</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        tocbot.init({
+            // Where to render the table of contents.
+            tocSelector: '#toc-content',
+            // Where to grab the headings to build the table of contents.
+            contentSelector: 'article',
+            // Which headings to grab inside of the contentSelector element.
+            headingSelector: 'h1, h2, h3',
+            // For headings inside relative or absolute positioned containers within content.
+            hasInnerContainers: true,
+        });
+    </script>
+
+
+    
+
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 text-center">
+                <ul class="list-inline">
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <ul class="copyright footer-menu list-inline">
+                    
+                    
+                        <li class="list-inline-item">
+                            
+                            
+                            <a href="/">
+                                
+                                    Home
+                                
+                            </a>
+                        </li>
+                    
+                        <li class="list-inline-item">
+                            
+                                <span class="copyright-split">&nbsp;|&nbsp;</span>
+                            
+                            
+                            <a href="/archives">
+                                
+                                    Archives
+                                
+                            </a>
+                        </li>
+                    
+                        <li class="list-inline-item">
+                            
+                                <span class="copyright-split">&nbsp;|&nbsp;</span>
+                            
+                            
+                            <a href="/tags">
+                                
+                                    Tags
+                                
+                            </a>
+                        </li>
+                    
+                        <li class="list-inline-item">
+                            
+                                <span class="copyright-split">&nbsp;|&nbsp;</span>
+                            
+                            
+                            <a href="/categories">
+                                
+                                    Categories
+                                
+                            </a>
+                        </li>
+                    
+                        <li class="list-inline-item">
+                            
+                                <span class="copyright-split">&nbsp;|&nbsp;</span>
+                            
+                            
+                            <a href="/about">
+                                
+                                    About
+                                
+                            </a>
+                        </li>
+                    
+                </ul>
+                <p class="copyright footer-author">
+                    &copy; -2021 
+                    <a rel="external" class="copyright-link" href="" target="_blank">39</a><br/>
+                    Powered by <a rel="external" class="copyright-link" href="https://hexo.io/" target="_blank">Hexo</a>  
+                    <span class="copyright-split">&nbsp;|&nbsp;&nbsp;</span>
+                    Theme <a rel="external" class="copyright-link" href="https://github.com/luswdev/hexo-theme-clean.git" target="_blank">Clean</a>
+                    
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    <!-- jQuery -->
+<script src="//cdn.jsdelivr.net/npm/jquery@2.1.4/dist/jquery.min.js"></script>
+
+<!-- For drop down -->
+<script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+<!-- Gallery -->
+<script src="//cdn.jsdelivr.net/npm/lightgallery@1.6.11/dist/js/lightgallery-all.min.js"></script>
+<!-- Busuanzi -->
+
+
+<!-- Search script -->
+
+<script src="/js/search.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        searchFunc( '/search.xml' , 'searchInput', 'searchResult');
+    });
+</script>
+
+
+
+<script src="/js/main.js"></script>
+
+
+
+    <!-- Search Modal -->
+    <!-- Modal -->
+<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+        <div class="modal-content overflow-auto">
+            <div class="modal-header">
+                <input type="text" class="form-control" placeholder="Searching Keywords..." id="searchInput">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div id="searchResult">
+                    <div class="search-empty text-center text-muted p-5">
+                        <i class="far fa-meh"></i>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<!--Description-->
+
+
+
+    <meta name="description" content="坚持、坚持、坚持"/>
+
+
+<!--Author-->
+
+    <meta name="author" content="39"/>
+
+
+<!--Open Graph Title-->
+
+    <meta property="og:title" content="php 常用方法"/>
+
+
+<!--Open Graph Description-->
+
+    <meta property="og:description" content="坚持、坚持、坚持"/>
+
+
+<!--Open Graph Site Name-->
+    <meta property="og:site_name" content="39 Blog"/>
+
+<!--Type page-->
+
+    <meta property="og:type" content="article"/>
+
+
+<!--Page Cover-->
+
+
+    <meta property="og:image" content="https://aixieluo.github.io/img/home-bg.jpg"/>
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+
+
+
+
+    <meta name="twitter:image" content="https://aixieluo.github.io/img/home-bg.jpg"/>
+
+
+<!-- Title -->
+
+<title>php 常用方法 | 39 Blog</title>
+
+<!-- Bootstrap Core CSS -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+
+<!-- Custom CSS -->
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<!-- Custom Fonts -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css" />
+<link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css" />
+<link href="//fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Gallery -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/featherlight@1.4.0/src/featherlight.css" integrity="sha256-30DV/STftlyQ6v8yaOWlabammvCYtRJERLj/m0b3zno=" crossorigin="anonymous">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/lightgallery@1.6.11/dist/css/lightgallery.min.css">
+
+<!-- favicon -->
+
+<link rel="icon" href="/img/favicon.png"/>
+
+
+
+    <!-- Google Analytics -->
+    
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<!-- Head tag -->
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top bg-transparent position-absolute w-100 p-0" id="nav">
+    <div class="container pl-0 pr-0">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <a class="navbar-brand text-white p-1 pl-3" href="/">39 Blog</a>
+        </div>
+        <div class="navbar-nav float-right">
+            <button class="btn btn-link search-btn navbar-item" data-toggle="modal" data-target="#searchModal">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 text-center">
+                <div class="post-heading text-white">
+                    <h1>php 常用方法</h1>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Main Content -->
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                
+                    <span class="meta d-inline-block">
+    
+        <i class="far fa-bookmark fa-fw"></i>
+        
+
+<a href="/categories/function/">function</a>
+
+    
+    
+    <!-- Date -->
+    
+        <span class="post-meta-split">&nbsp;|&nbsp;</span>
+        <i class="far fa-calendar-check fa-fw"></i>
+        2017-09-08
+    
+    <!-- word count and read count -->
+    
+
+    
+
+    
+</span>  
+                
+                <p>记录一些常用的 PHP 基本方法</p>
+<span id="more"></span>
+
+<h2 id="数组相关"><a href="#数组相关" class="headerlink" title="数组相关"></a>数组相关</h2><h3 id="array-merge-recursive-array1-array2-把一个或者多个数组合并成一个数组"><a href="#array-merge-recursive-array1-array2-把一个或者多个数组合并成一个数组" class="headerlink" title="array_merge_recursive(array1 [, array2] [...]) 把一个或者多个数组合并成一个数组"></a><code>array_merge_recursive(array1 [, array2] [...])</code> 把一个或者多个数组合并成一个数组</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$a</span> = [<span class="string">&#x27;a&#x27;</span> =&gt; <span class="number">1</span>, <span class="string">&#x27;b&#x27;</span> =&gt; <span class="number">2</span>];</span><br><span class="line"><span class="variable">$b</span> = [<span class="string">&#x27;b&#x27;</span> =&gt; <span class="number">3</span>, <span class="string">&#x27;c&#x27;</span> =&gt; <span class="number">4</span>];</span><br><span class="line">array_merge_recursive(<span class="variable">$a</span>, <span class="variable">$b</span>);</span><br><span class="line"><span class="comment">// [&#x27;a&#x27; =&gt; 1, &#x27;b&#x27; =&gt; [0 =&gt; 2, 1=&gt; 3], &#x27;c&#x27; =&gt; 4]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="array-keys-array-value-strict-返回包含数组的所有键名的一个新数组"><a href="#array-keys-array-value-strict-返回包含数组的所有键名的一个新数组" class="headerlink" title="array_keys(array [, value] [, strict]) 返回包含数组的所有键名的一个新数组"></a><code>array_keys(array [, value] [, strict])</code> 返回包含数组的所有键名的一个新数组</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$arr</span> = [<span class="string">&#x27;a&#x27;</span> =&gt; <span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;c&#x27;</span> =&gt; <span class="string">&#x27;d&#x27;</span>];</span><br><span class="line">array_keys(<span class="variable">$arr</span>);</span><br><span class="line"><span class="comment">// [&#x27;0&#x27; =&gt; &#x27;a&#x27;, &#x27;1&#x27; =&gt; &#x27;c&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="array-search-value-array-strict-在数组中根据键值返回对应键名"><a href="#array-search-value-array-strict-在数组中根据键值返回对应键名" class="headerlink" title="array_search(value, array [, strict]) 在数组中根据键值返回对应键名"></a><code>array_search(value, array [, strict])</code> 在数组中根据键值返回对应键名</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$arr</span> = [<span class="string">&#x27;a&#x27;</span> =&gt; <span class="string">&#x27;red&#x27;</span>, <span class="string">&#x27;b&#x27;</span> =&gt; <span class="string">&#x27;yellow&#x27;</span>];</span><br><span class="line">array_search(<span class="string">&#x27;red&#x27;</span>, <span class="variable">$arr</span>);</span><br><span class="line"><span class="comment">// &#x27;a&#x27;</span></span><br><span class="line">array_search(<span class="string">&#x27;black&#x27;</span>, <span class="variable">$arr</span>);</span><br><span class="line"><span class="comment">// false</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="array-push-array-value-value2-给数组尾部添加一个或者多个新元素"><a href="#array-push-array-value-value2-给数组尾部添加一个或者多个新元素" class="headerlink" title="array_push(array, value [, value2]) 给数组尾部添加一个或者多个新元素"></a><code>array_push(array, value [, value2])</code> 给数组尾部添加一个或者多个新元素</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$arr</span> = [<span class="string">&#x27;0&#x27;</span> =&gt; <span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;1&#x27;</span> =&gt; <span class="string">&#x27;b&#x27;</span>];</span><br><span class="line">array_push(<span class="variable">$arr</span>, <span class="string">&#x27;c&#x27;</span>, <span class="string">&#x27;d&#x27;</span>);</span><br><span class="line"><span class="comment">// [&#x27;0&#x27; =&gt; &#x27;a&#x27;, &#x27;1&#x27; =&gt; &#x27;b&#x27;, &#x27;2&#x27; =&gt; &#x27;c&#x27;, &#x27;3&#x27; =&gt; &#x27;d&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="array-flip-array-用于交换数组的键名和其对应的键值"><a href="#array-flip-array-用于交换数组的键名和其对应的键值" class="headerlink" title="array_flip($array) 用于交换数组的键名和其对应的键值"></a><code>array_flip($array)</code> 用于交换数组的键名和其对应的键值</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$arr</span> = [<span class="number">0</span> =&gt; <span class="string">&#x27;a&#x27;</span>, <span class="number">1</span> =&gt; <span class="string">&#x27;b&#x27;</span>];</span><br><span class="line">array_flip(<span class="variable">$arr</span>)</span><br><span class="line"><span class="comment">// [&#x27;a&#x27; =&gt; 0, &#x27;b&#x27; =&gt; 1]</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="字符串相关"><a href="#字符串相关" class="headerlink" title="字符串相关"></a>字符串相关</h2><h3 id="strpos-string-find-start-查找一个字符串在另一个字符串中第一次出现的位置（对大小写敏感）"><a href="#strpos-string-find-start-查找一个字符串在另一个字符串中第一次出现的位置（对大小写敏感）" class="headerlink" title="strpos(string, find [, start]) 查找一个字符串在另一个字符串中第一次出现的位置（对大小写敏感）"></a><code>strpos(string, find [, start])</code> 查找一个字符串在另一个字符串中第一次出现的位置（对大小写敏感）</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> strpos(<span class="string">&quot;You love php, I love php too!&quot;</span>,<span class="string">&quot;php&quot;</span>);</span><br><span class="line"><span class="comment">//9</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="IO相关"><a href="#IO相关" class="headerlink" title="IO相关"></a>IO相关</h2><h3 id="is-file-file-检查指定文件名的文件是否是正常的文件"><a href="#is-file-file-检查指定文件名的文件是否是正常的文件" class="headerlink" title="is_file(file) 检查指定文件名的文件是否是正常的文件"></a><code>is_file(file)</code> 检查指定文件名的文件是否是正常的文件</h3><p>本函数的结果会被缓存，请使用 <code>clearstatcache()</code> 来清除缓存</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">is_file(<span class="variable">$path</span>)</span><br><span class="line"><span class="comment">// true </span></span><br></pre></td></tr></table></figure>
+
+<h2 id="时间相关"><a href="#时间相关" class="headerlink" title="时间相关"></a>时间相关</h2><h3 id="strtotime-time-now-将任何英文文本的时间或者日期转换为unix时间戳"><a href="#strtotime-time-now-将任何英文文本的时间或者日期转换为unix时间戳" class="headerlink" title="strtotime(time, now) 将任何英文文本的时间或者日期转换为unix时间戳"></a><code>strtotime(time, now)</code> 将任何英文文本的时间或者日期转换为unix时间戳</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span>(strtotime(<span class="string">&quot;now&quot;</span>) . <span class="string">&quot;&lt;br&gt;&quot;</span>);</span><br><span class="line"><span class="keyword">echo</span>(strtotime(<span class="string">&quot;5 September 2016&quot;</span>) . <span class="string">&quot;&lt;br&gt;&quot;</span>);</span><br><span class="line"><span class="keyword">echo</span>(strtotime(<span class="string">&quot;+5 hours&quot;</span>) . <span class="string">&quot;&lt;br&gt;&quot;</span>);</span><br><span class="line"><span class="keyword">echo</span>(strtotime(<span class="string">&quot;+1 week&quot;</span>) . <span class="string">&quot;&lt;br&gt;&quot;</span>);</span><br><span class="line"><span class="keyword">echo</span>(strtotime(<span class="string">&quot;+1 week 3 days 7 hours 5 seconds&quot;</span>) . <span class="string">&quot;&lt;br&gt;&quot;</span>);</span><br><span class="line"><span class="keyword">echo</span>(strtotime(<span class="string">&quot;next Monday&quot;</span>) . <span class="string">&quot;&lt;br&gt;&quot;</span>);</span><br><span class="line"><span class="keyword">echo</span>(strtotime(<span class="string">&quot;last Sunday&quot;</span>));</span><br><span class="line"><span class="comment">//1505185265</span></span><br><span class="line"><span class="comment">//1473004800</span></span><br><span class="line"><span class="comment">//1505203265</span></span><br><span class="line"><span class="comment">//1505790065</span></span><br><span class="line"><span class="comment">//1506074470</span></span><br><span class="line"><span class="comment">//1505664000</span></span><br><span class="line"><span class="comment">//1504972800</span></span><br></pre></td></tr></table></figure>
+
+            </div>
+
+            <!-- Post information -->
+            
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 post-tags">
+        
+            <i class="fas fa-tag" style="vertical-align: middle;font-size: .8rem;"></i>
+            tags:&nbsp;
+            
+            
+        
+            <a href="/tags/function/">#function</a>
+        
+    </div>
+
+            
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+        <ul class="pagination d-block text-center">
+            
+                <li class="previous page-item d-inline"><a href="/2017/09/27/zsh-autosuggestions%20%E4%B8%AD%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%88%AB%E5%90%8D/" class="page-link float-left">&larr;  Newer Posts</a></li>
+            
+            
+                <li class="next page-item d-inline"><a href="/2017/09/07/composer%20update%20%E6%8A%A5%E9%94%99/" class="page-link float-right">Older Posts  &rarr;</a></li>
+            
+        </ul>
+    </div>
+
+
+            
+                <!-- Comments -->
+                
+
+                
+
+            
+
+        </div>
+    </div>
+</article> 
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    <style>
+        #toc-content .toc-link::before {
+            background-color: transparent;
+            max-height: 25px;
+        }
+
+        #toc-content .toc-link.is-active-link::before {
+            background-color: #404040;
+        }
+    </style>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <div class="ui-toc dropup scrollspy-body pull-right" style="right: 3%;">
+        <button type="button" class="toc-btn btn btn-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+            <i class="fas fa-list"></i>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right p-2"  aria-labelledby="tocLabel">
+            <div class="toc-widget">
+                <div id="toc-content" class="text-truncate">
+                </div>
+            </div>
+            <div class="toc-menu pt-3 pl-4">
+                <a class="expand-toggle d-block py-1" href="#"><span class="expand-text">Expand all</span><span class="close-text" style="display: none;">Collapse all</span></a>
+                <a class="back-to-top d-block py-1" href="#">Back to top</a>
+                <a class="go-to-bottom d-block py-1" href="#">Go to bottom</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        tocbot.init({
+            // Where to render the table of contents.
+            tocSelector: '#toc-content',
+            // Where to grab the headings to build the table of contents.
+            contentSelector: 'article',
+            // Which headings to grab inside of the contentSelector element.
+            headingSelector: 'h1, h2, h3',
+            // For headings inside relative or absolute positioned containers within content.
+            hasInnerContainers: true,
+        });
+    </script>
+
+
+    
+
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 text-center">
+                <ul class="list-inline">
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <ul class="copyright footer-menu list-inline">
+                    
+                    
+                        <li class="list-inline-item">
+                            
+                            
+                            <a href="/">
+                                
+                                    Home
+                                
+                            </a>
+                        </li>
+                    
+                        <li class="list-inline-item">
+                            
+                                <span class="copyright-split">&nbsp;|&nbsp;</span>
+                            
+                            
+                            <a href="/archives">
+                                
+                                    Archives
+                                
+                            </a>
+                        </li>
+                    
+                        <li class="list-inline-item">
+                            
+                                <span class="copyright-split">&nbsp;|&nbsp;</span>
+                            
+                            
+                            <a href="/tags">
+                                
+                                    Tags
+                                
+                            </a>
+                        </li>
+                    
+                        <li class="list-inline-item">
+                            
+                                <span class="copyright-split">&nbsp;|&nbsp;</span>
+                            
+                            
+                            <a href="/categories">
+                                
+                                    Categories
+                                
+                            </a>
+                        </li>
+                    
+                        <li class="list-inline-item">
+                            
+                                <span class="copyright-split">&nbsp;|&nbsp;</span>
+                            
+                            
+                            <a href="/about">
+                                
+                                    About
+                                
+                            </a>
+                        </li>
+                    
+                </ul>
+                <p class="copyright footer-author">
+                    &copy; -2021 
+                    <a rel="external" class="copyright-link" href="" target="_blank">39</a><br/>
+                    Powered by <a rel="external" class="copyright-link" href="https://hexo.io/" target="_blank">Hexo</a>  
+                    <span class="copyright-split">&nbsp;|&nbsp;&nbsp;</span>
+                    Theme <a rel="external" class="copyright-link" href="https://github.com/luswdev/hexo-theme-clean.git" target="_blank">Clean</a>
+                    
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    <!-- jQuery -->
+<script src="//cdn.jsdelivr.net/npm/jquery@2.1.4/dist/jquery.min.js"></script>
+
+<!-- For drop down -->
+<script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+<!-- Gallery -->
+<script src="//cdn.jsdelivr.net/npm/lightgallery@1.6.11/dist/js/lightgallery-all.min.js"></script>
+<!-- Busuanzi -->
+
+
+<!-- Search script -->
+
+<script src="/js/search.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        searchFunc( '/search.xml' , 'searchInput', 'searchResult');
+    });
+</script>
+
+
+
+<script src="/js/main.js"></script>
+
+
+
+    <!-- Search Modal -->
+    <!-- Modal -->
+<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+        <div class="modal-content overflow-auto">
+            <div class="modal-header">
+                <input type="text" class="form-control" placeholder="Searching Keywords..." id="searchInput">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div id="searchResult">
+                    <div class="search-empty text-center text-muted p-5">
+                        <i class="far fa-meh"></i>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

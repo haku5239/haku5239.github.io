@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<!--Description-->
+
+
+
+    <meta name="description" content="坚持、坚持、坚持"/>
+
+
+<!--Author-->
+
+    <meta name="author" content="39"/>
+
+
+<!--Open Graph Title-->
+
+    <meta property="og:title" content="Linux 常用命令"/>
+
+
+<!--Open Graph Description-->
+
+    <meta property="og:description" content="坚持、坚持、坚持"/>
+
+
+<!--Open Graph Site Name-->
+    <meta property="og:site_name" content="39 Blog"/>
+
+<!--Type page-->
+
+    <meta property="og:type" content="article"/>
+
+
+<!--Page Cover-->
+
+
+    <meta property="og:image" content="https://aixieluo.github.io/img/home-bg.jpg"/>
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+
+
+
+
+    <meta name="twitter:image" content="https://aixieluo.github.io/img/home-bg.jpg"/>
+
+
+<!-- Title -->
+
+<title>Linux 常用命令 | 39 Blog</title>
+
+<!-- Bootstrap Core CSS -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+
+<!-- Custom CSS -->
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<!-- Custom Fonts -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css" />
+<link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css" />
+<link href="//fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Gallery -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/featherlight@1.4.0/src/featherlight.css" integrity="sha256-30DV/STftlyQ6v8yaOWlabammvCYtRJERLj/m0b3zno=" crossorigin="anonymous">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/lightgallery@1.6.11/dist/css/lightgallery.min.css">
+
+<!-- favicon -->
+
+<link rel="icon" href="/img/favicon.png"/>
+
+
+
+    <!-- Google Analytics -->
+    
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<!-- Head tag -->
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top bg-transparent position-absolute w-100 p-0" id="nav">
+    <div class="container pl-0 pr-0">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <a class="navbar-brand text-white p-1 pl-3" href="/">39 Blog</a>
+        </div>
+        <div class="navbar-nav float-right">
+            <button class="btn btn-link search-btn navbar-item" data-toggle="modal" data-target="#searchModal">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 text-center">
+                <div class="post-heading text-white">
+                    <h1>Linux 常用命令</h1>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Main Content -->
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                
+                    <span class="meta d-inline-block">
+    
+        <i class="far fa-bookmark fa-fw"></i>
+        
+
+<a href="/categories/Command/">Command</a>/ <a href="/categories/Command/Linux/">Linux</a>
+
+    
+    
+    <!-- Date -->
+    
+        <span class="post-meta-split">&nbsp;|&nbsp;</span>
+        <i class="far fa-calendar-check fa-fw"></i>
+        2017-06-15
+    
+    <!-- word count and read count -->
+    
+
+    
+
+    
+</span>  
+                
+                <h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>记录一些 <code>linux</code> 的常用命令，方便平时使用时的查阅</p>
+<span id="more"></span>
+
+<h3 id="创建文件夹"><a href="#创建文件夹" class="headerlink" title="创建文件夹"></a>创建文件夹</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir [选项] dirname</span><br></pre></td></tr></table></figure>
+
+<h4 id="选项"><a href="#选项" class="headerlink" title="选项"></a>选项</h4><blockquote>
+<p><code>-m</code> 用于对新建目录设置存取权限，也可以用 <code>chmod</code> 命令进行设置<br><code>-p</code> 需要时创建上层文件夹（或者目录），如果文件夹（或者目录已经存在），则不视为错误</p>
+</blockquote>
+<h3 id="创建文件"><a href="#创建文件" class="headerlink" title="创建文件"></a>创建文件</h3><p>多数系统直接把 vi 做成 vim 的软连接了，使用 vi 相当于在使用 vim<br>所以本文直接使用 vim</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim filename</span><br></pre></td></tr></table></figure>
+
+<p><a href="/vim">vim 命令详情</a></p>
+<h3 id="删除文件夹（文件）"><a href="#删除文件夹（文件）" class="headerlink" title="删除文件夹（文件）"></a>删除文件夹（文件）</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm [选项] dirname(filename)</span><br></pre></td></tr></table></figure>
+
+<h4 id="选项-1"><a href="#选项-1" class="headerlink" title="选项"></a>选项</h4><blockquote>
+<p><code>-i</code> 删除前逐一询问确认<br><code>-f</code> 即使原档案属性设为只读，亦直接删除，无需逐一确认<br><code>-r</code> 将目录及以下档案全部删除</p>
+</blockquote>
+<h3 id="移动文件夹（文件）"><a href="#移动文件夹（文件）" class="headerlink" title="移动文件夹（文件）"></a>移动文件夹（文件）</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv [选项] dirname(filename)</span><br></pre></td></tr></table></figure>
+
+<h4 id="选项-2"><a href="#选项-2" class="headerlink" title="选项"></a>选项</h4><blockquote>
+<p><code>-b</code> 若需覆盖文件，则覆盖前会先行备份<br><code>-f</code> force 强制的意思，如果目标文件已经存在，不会询问直接覆盖<br><code>-i</code> 若目标文件已经存在，则会询问是否覆盖<br><code>-u</code> 若目标文件已经存在，且 source 比较新，才会更新<br><code>-t</code> 指定mv的目标目录，该选项适用于多个文件到一个目录的情况，此时目标目录在前，文件在后</p>
+</blockquote>
+<p>Tip: <code>mv</code> 可用于重命名</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv dirname1(filename1) dirname2(filename2)</span><br></pre></td></tr></table></figure>
+
+<h3 id="复制文件夹（文件）"><a href="#复制文件夹（文件）" class="headerlink" title="复制文件夹（文件）"></a>复制文件夹（文件）</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp [选项] dirname(filename)</span><br></pre></td></tr></table></figure>
+
+<h4 id="选项-3"><a href="#选项-3" class="headerlink" title="选项"></a>选项</h4><blockquote>
+<p><code>-a</code> 为每个已存在的目标文件创建备份<br><code>-f</code> 如果目标文件无法打开则将其移除并重试（当 -n 存在时不需要此项）<br><code>-i</code> 覆盖前询问（使前面的 -n 失效）<br><code>-n</code> 不要覆盖已存在的文件（使前面的 -i 失效）<br><code>-R</code>, <code>-r</code> 复制目录及目录内的所有项目</p>
+</blockquote>
+<h3 id="查看目录信息"><a href="#查看目录信息" class="headerlink" title="查看目录信息"></a>查看目录信息</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls [选项] [目录名称]</span><br></pre></td></tr></table></figure>
+
+<h4 id="选项-4"><a href="#选项-4" class="headerlink" title="选项"></a>选项</h4><blockquote>
+<p><code>-a</code> 列出目录下的所有文件，包括以 <code>.</code> 开头的隐含文件<br><code>-A</code> 同 <code>-a</code> 但不列出 <code>.</code> （表示当前目录）和 <code>..</code> 表示父级目录<br><code>-l</code> 除了文件名以外，将文件权限，文件所有者，文件大小等信息列出来<br><code>-R</code> 同时列出所有子目录层</p>
+</blockquote>
+<h3 id="更改访问权限"><a href="#更改访问权限" class="headerlink" title="更改访问权限"></a>更改访问权限</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod [-cfvR][--help][--version] mode file</span><br></pre></td></tr></table></figure>
+
+<h4 id="命令参数"><a href="#命令参数" class="headerlink" title="命令参数"></a>命令参数</h4><blockquote>
+<p><code>-c</code> 发生改变时，报告处理信息<br><code>-f</code> 错误信息不输出<br><code>-v</code> 运行时显示详细处理信息<br><code>-R</code> 处理指定目录以及子目录下的所有文件</p>
+</blockquote>
+<h4 id="权限范围"><a href="#权限范围" class="headerlink" title="权限范围"></a>权限范围</h4><blockquote>
+<p><code>u</code> 目录或者文件的当前用户<br><code>g</code> 目录或者文件的当前群组<br><code>o</code> 除了目录或者文件的当前用户或者群组之外的用户或者群组<br><code>a</code> 所有的用户及群组</p>
+</blockquote>
+<h4 id="权限代号"><a href="#权限代号" class="headerlink" title="权限代号"></a>权限代号</h4><blockquote>
+<p><code>r</code> 读权限，用数字4表示<br><code>w</code> 写权限，用数字2表示<br><code>x</code> 执行权限，用数字1表示<br><code>-</code> 删除权限，用数字0表示<br><code>s</code> 特殊权限</p>
+</blockquote>
+<h4 id="文字设定法"><a href="#文字设定法" class="headerlink" title="文字设定法"></a>文字设定法</h4><p>例：</p>
+<blockquote>
+<p><code>chmod u+x,o-x file</code> 给当前用户增加执行权限，删除其他用户和其他群组执行权限<br><code>chmod a=r file</code> 撤销全部用户和群组原来所有权限，然后增加读取权限</p>
+</blockquote>
+<h4 id="数字设定法"><a href="#数字设定法" class="headerlink" title="数字设定法"></a>数字设定法</h4><p>例：</p>
+<blockquote>
+<p><code>chmod -R 444 file</code> 为所有用户增加读取权限</p>
+</blockquote>
+
+            </div>
+
+            <!-- Post information -->
+            
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 post-tags">
+        
+            <i class="fas fa-tag" style="vertical-align: middle;font-size: .8rem;"></i>
+            tags:&nbsp;
+            
+            
+        
+            <a href="/tags/Linux/">#Linux</a> <a href="/tags/Command/">#Command</a>
+        
+    </div>
+
+            
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+        <ul class="pagination d-block text-center">
+            
+                <li class="previous page-item d-inline"><a href="/2017/06/20/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="page-link float-left">&larr;  Newer Posts</a></li>
+            
+            
+                <li class="next page-item d-inline"><a href="/2017/06/15/vim/" class="page-link float-right">Older Posts  &rarr;</a></li>
+            
+        </ul>
+    </div>
+
+
+            
+                <!-- Comments -->
+                
+
+                
+
+            
+
+        </div>
+    </div>
+</article> 
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    <style>
+        #toc-content .toc-link::before {
+            background-color: transparent;
+            max-height: 25px;
+        }
+
+        #toc-content .toc-link.is-active-link::before {
+            background-color: #404040;
+        }
+    </style>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <div class="ui-toc dropup scrollspy-body pull-right" style="right: 3%;">
+        <button type="button" class="toc-btn btn btn-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+            <i class="fas fa-list"></i>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right p-2"  aria-labelledby="tocLabel">
+            <div class="toc-widget">
+                <div id="toc-content" class="text-truncate">
+                </div>
+            </div>
+            <div class="toc-menu pt-3 pl-4">
+                <a class="expand-toggle d-block py-1" href="#"><span class="expand-text">Expand all</span><span class="close-text" style="display: none;">Collapse all</span></a>
+                <a class="back-to-top d-block py-1" href="#">Back to top</a>
+                <a class="go-to-bottom d-block py-1" href="#">Go to bottom</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        tocbot.init({
+            // Where to render the table of contents.
+            tocSelector: '#toc-content',
+            // Where to grab the headings to build the table of contents.
+            contentSelector: 'article',
+            // Which headings to grab inside of the contentSelector element.
+            headingSelector: 'h1, h2, h3',
+            // For headings inside relative or absolute positioned containers within content.
+            hasInnerContainers: true,
+        });
+    </script>
+
+
+    
+
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 text-center">
+                <ul class="list-inline">
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <ul class="copyright footer-menu list-inline">
+                    
+                    
+                        <li class="list-inline-item">
+                            
+                            
+                            <a href="/">
+                                
+                                    Home
+                                
+                            </a>
+                        </li>
+                    
+                        <li class="list-inline-item">
+                            
+                                <span class="copyright-split">&nbsp;|&nbsp;</span>
+                            
+                            
+                            <a href="/archives">
+                                
+                                    Archives
+                                
+                            </a>
+                        </li>
+                    
+                        <li class="list-inline-item">
+                            
+                                <span class="copyright-split">&nbsp;|&nbsp;</span>
+                            
+                            
+                            <a href="/tags">
+                                
+                                    Tags
+                                
+                            </a>
+                        </li>
+                    
+                        <li class="list-inline-item">
+                            
+                                <span class="copyright-split">&nbsp;|&nbsp;</span>
+                            
+                            
+                            <a href="/categories">
+                                
+                                    Categories
+                                
+                            </a>
+                        </li>
+                    
+                        <li class="list-inline-item">
+                            
+                                <span class="copyright-split">&nbsp;|&nbsp;</span>
+                            
+                            
+                            <a href="/about">
+                                
+                                    About
+                                
+                            </a>
+                        </li>
+                    
+                </ul>
+                <p class="copyright footer-author">
+                    &copy; -2021 
+                    <a rel="external" class="copyright-link" href="" target="_blank">39</a><br/>
+                    Powered by <a rel="external" class="copyright-link" href="https://hexo.io/" target="_blank">Hexo</a>  
+                    <span class="copyright-split">&nbsp;|&nbsp;&nbsp;</span>
+                    Theme <a rel="external" class="copyright-link" href="https://github.com/luswdev/hexo-theme-clean.git" target="_blank">Clean</a>
+                    
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    <!-- jQuery -->
+<script src="//cdn.jsdelivr.net/npm/jquery@2.1.4/dist/jquery.min.js"></script>
+
+<!-- For drop down -->
+<script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+<!-- Gallery -->
+<script src="//cdn.jsdelivr.net/npm/lightgallery@1.6.11/dist/js/lightgallery-all.min.js"></script>
+<!-- Busuanzi -->
+
+
+<!-- Search script -->
+
+<script src="/js/search.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        searchFunc( '/search.xml' , 'searchInput', 'searchResult');
+    });
+</script>
+
+
+
+<script src="/js/main.js"></script>
+
+
+
+    <!-- Search Modal -->
+    <!-- Modal -->
+<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+        <div class="modal-content overflow-auto">
+            <div class="modal-header">
+                <input type="text" class="form-control" placeholder="Searching Keywords..." id="searchInput">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div id="searchResult">
+                    <div class="search-empty text-center text-muted p-5">
+                        <i class="far fa-meh"></i>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
