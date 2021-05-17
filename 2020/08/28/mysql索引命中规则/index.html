@@ -19,7 +19,7 @@
 
 <!--Open Graph Title-->
 
-    <meta property="og:title" content="小笔记"/>
+    <meta property="og:title" content="mysql索引命中规则"/>
 
 
 <!--Open Graph Description-->
@@ -32,7 +32,7 @@
 
 <!--Type page-->
 
-    <meta property="og:type" content="website"/>
+    <meta property="og:type" content="article"/>
 
 
 <!--Page Cover-->
@@ -51,7 +51,7 @@
 
 <!-- Title -->
 
-<title>小笔记</title>
+<title>mysql索引命中规则 | 小笔记</title>
 
 <!-- Bootstrap Core CSS -->
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
@@ -113,281 +113,141 @@
 
     <!-- Main Content -->
     <!-- Page Header -->
-<!-- Set your background image for this header in the theme's configuration: index_cover -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
 <header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 offset-md-2 col-md-10 offset-md-1">
-                <div class="site-heading text-center text-white">
-                    <h1>小笔记</h1>
-                    <hr class="small">
-                    <span class="subheading d-block">记录一些基础或者有趣的东西</span>
+            <div class="col-lg-12 col-md-12 text-center">
+                <div class="post-heading text-white">
+                    <h1>mysql索引命中规则</h1>
+                    
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container page-index">
-    <div class="row">
-        <div class="col-lg-8 offset-md-2 col-md-10 offset-md-1">
-            
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Main Content -->
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
                 
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-        </div>
-        <div class="col-lg-8 offset-md-2 col-md-10 offset-md-1 post-all">    
-            
-                
-                    <div class="post-preview post-preview-index">
-    <a href="/2021/03/22/redis%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">
-        <h2 class="post-title">
-            redis的基本数据类型与常用方法
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2021-03-22
-    </p>
-</div>
-<hr>
-                
-            
-                
-                    <div class="post-preview post-preview-index">
-    <a href="/2021/03/22/%E5%88%86%E5%B8%83%E5%BC%8F%E3%80%81%E9%9B%86%E7%BE%A4%E3%80%81%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E7%9A%84%E5%8C%BA%E5%88%AB%E4%B8%8E%E8%81%94%E7%B3%BB/">
-        <h2 class="post-title">
-            分布式、集群的区别与联系
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2021-03-22
-    </p>
-</div>
-<hr>
-                
-            
-                
-                    <div class="post-preview post-preview-index">
-    <a href="/2020/08/28/mysql%E7%B4%A2%E5%BC%95%E5%91%BD%E4%B8%AD%E8%A7%84%E5%88%99/">
-        <h2 class="post-title">
-            mysql索引命中规则
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
+                    <span class="meta d-inline-block">
+    
+    
+    <!-- Date -->
+    
+        <span class="post-meta-split">&nbsp;|&nbsp;</span>
+        <i class="far fa-calendar-check fa-fw"></i>
         2020-08-28
-    </p>
-</div>
-<hr>
-                
-            
-                
-                    <div class="post-preview post-preview-index">
-    <a href="/2020/05/17/mysql%E5%B8%B8%E8%A7%81%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88/">
-        <h2 class="post-title">
-            mysql常见优化方案
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2020-05-17
-    </p>
-</div>
-<hr>
-                
-            
-                
-                    <div class="post-preview post-preview-index">
-    <a href="/2019/05/03/Mac%E7%BB%88%E7%AB%AF%E4%BD%BF%E7%94%A8shadowsocks%E7%BF%BB%E5%A2%99/">
-        <h2 class="post-title">
-            使用privoxy在命令行转发代理
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2019-05-03
-    </p>
-</div>
-<hr>
-                
-            
-                
-                    <div class="post-preview post-preview-index">
-    <a href="/2017/11/22/python%20%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/">
-        <h2 class="post-title">
-            python 基本语法
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2017-11-22
-    </p>
-</div>
-<hr>
-                
-            
-                
-                    <div class="post-preview post-preview-index">
-    <a href="/2017/09/27/zsh-autosuggestions%20%E4%B8%AD%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%88%AB%E5%90%8D/">
-        <h2 class="post-title">
-            zsh-autosuggestions 中的命令别名
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2017-09-27
-    </p>
-</div>
-<hr>
-                
-            
-                
-                    <div class="post-preview post-preview-index">
-    <a href="/2017/09/08/php%20%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/">
-        <h2 class="post-title">
-            php 常用方法
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2017-09-08
-    </p>
-</div>
-<hr>
-                
-            
-                
-                    <div class="post-preview post-preview-index">
-    <a href="/2017/09/07/composer%20update%20%E6%8A%A5%E9%94%99/">
-        <h2 class="post-title">
-            composer update 报错
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2017-09-07
-    </p>
-</div>
-<hr>
-                
-            
-                
-                    <div class="post-preview post-preview-index">
-    <a href="/2017/09/05/%E8%A7%A3%E5%86%B3gitignore%E4%B8%8D%E7%94%9F%E6%95%88%E9%97%AE%E9%A2%98/">
-        <h2 class="post-title">
-            解决gitignore不生效问题
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2017-09-05
-    </p>
-</div>
-<hr>
-                
-            
-        </div>
-        <div class="col-lg-8 offset-md-2 col-md-10 offset-md-1 post-all">    
-            <ul class="pagination d-block text-center">
     
-        <li class="previous page-item d-inline"><a href="/" class="page-link float-left">&larr;  Newer Posts</a></li>
+    <!-- word count and read count -->
     
+
     
-        <li class="next page-item d-inline"><a href="/page/3/" class="page-link float-right">Older Posts  &rarr;</a></li>
+
     
+</span>  
+                
+                <h3 id="mysql索引命中规则"><a href="#mysql索引命中规则" class="headerlink" title="mysql索引命中规则"></a>mysql索引命中规则</h3><ul>
+<li>对索引字段使用<code>like</code>时，以<code>%</code>开头，如<code>s like %str</code>，此时索引不生效，在末尾使用时，如<code>s like str%</code>，索引生效</li>
+<li><code>or</code>的使用，当所有<code>or</code>条件判断的字段都有索引时，就会走索引，如有一个字段未设置索引，则会走全表扫描</li>
+<li>字符串类型的索引，必须给字段加上单引号，才会走索引</li>
+<li><code>where</code>条件中使用了<code>&lt;&gt;</code>、<code>!=</code>时不会走索引</li>
+<li><code>where</code>后面的条件使用表达式，不会走索引</li>
+<li><code>where</code>条件后面使用<code>not in</code>不走索引，使用<code>in</code>会走索引</li>
+<li><code>where</code>条件使用<code>is not null</code> 不走索引，使用<code>is null</code>走索引</li>
+<li>查询联合索引时，使用联合索引所有索引条件走索引，或者使用前部的索引条件时也会走索引，如索引<code>index(l1, l2)</code>，单独查询<code>l1</code>时会走索引，单独查询<code>l2</code>时则不走索引</li>
 </ul>
+<p>索引的<code>key_len</code>是根据表定义计算而得的最大可能长度，在不损失精确度的情况下，越短越好</p>
+
+            </div>
+
+            <!-- Post information -->
+            
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 post-tags">
+        
+            <i class="fas fa-tag" style="vertical-align: middle;font-size: .8rem;"></i>
+            tags:&nbsp;
+            
+            
+        
+            <a href="/tags/blog/">#blog</a> <a href="/tags/mysql/">#mysql</a>
+        
+    </div>
+
+            
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+        <ul class="pagination d-block text-center">
+            
+                <li class="previous page-item d-inline"><a href="/2021/03/22/%E5%88%86%E5%B8%83%E5%BC%8F%E3%80%81%E9%9B%86%E7%BE%A4%E3%80%81%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E7%9A%84%E5%8C%BA%E5%88%AB%E4%B8%8E%E8%81%94%E7%B3%BB/" class="page-link float-left">&larr;  Newer Posts</a></li>
+            
+            
+                <li class="next page-item d-inline"><a href="/2020/05/17/mysql%E5%B8%B8%E8%A7%81%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88/" class="page-link float-right">Older Posts  &rarr;</a></li>
+            
+        </ul>
+    </div>
+
+
+            
+                <!-- Comments -->
+                
+
+                
+
+            
+
         </div>
     </div>
-</div>
+</article> 
 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    <style>
+        #toc-content .toc-link::before {
+            background-color: transparent;
+            max-height: 25px;
+        }
+
+        #toc-content .toc-link.is-active-link::before {
+            background-color: #404040;
+        }
+    </style>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <div class="ui-toc dropup scrollspy-body pull-right" style="right: 3%;">
+        <button type="button" class="toc-btn btn btn-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+            <i class="fas fa-list"></i>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right p-2"  aria-labelledby="tocLabel">
+            <div class="toc-widget">
+                <div id="toc-content" class="text-truncate">
+                </div>
+            </div>
+            <div class="toc-menu pt-3 pl-4">
+                <a class="expand-toggle d-block py-1" href="#"><span class="expand-text">Expand all</span><span class="close-text" style="display: none;">Collapse all</span></a>
+                <a class="back-to-top d-block py-1" href="#">Back to top</a>
+                <a class="go-to-bottom d-block py-1" href="#">Go to bottom</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        tocbot.init({
+            // Where to render the table of contents.
+            tocSelector: '#toc-content',
+            // Where to grab the headings to build the table of contents.
+            contentSelector: 'article',
+            // Which headings to grab inside of the contentSelector element.
+            headingSelector: 'h1, h2, h3',
+            // For headings inside relative or absolute positioned containers within content.
+            hasInnerContainers: true,
+        });
+    </script>
+
+
+    
 
 
     <!-- Footer -->
