@@ -4,8 +4,7 @@ date: 2017/7/14 15:01:39
 tags: 
 	- Git
 categories: 
-	- Command
-	- Git
+	- 编程
 ---
 
 ### 安装 Git

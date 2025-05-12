@@ -4,7 +4,7 @@ date: 2017/09/08 11:41:27
 tags: 
 	- function
 categories: 
-	- function
+	- 编程
 ---
 
 记录一些常用的 PHP 基本方法

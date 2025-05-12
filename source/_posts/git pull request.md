@@ -4,7 +4,7 @@ date: 2017/7/25 12:22:39
 tags: 
 	- GitHub
 categories: 
-	- GitHub
+	- 编程
 ---
 
 创建一个 `pull request` 的步骤如下：

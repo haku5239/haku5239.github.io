@@ -5,8 +5,7 @@ tags:
 	- vim
 	- Command
 categories: 
-	- Command
-	- vim
+	- 编程
 ---
 
 ### 概述

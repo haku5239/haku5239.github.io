@@ -1,9 +1,10 @@
 ---
- title: redis的基本数据类型与常用方法
- date: 2021/03/22 16:37:07 
- tags: 
-
+title: redis的基本数据类型与常用方法
+date: 2021/03/22 16:37:07 
+tags: 
  - blog 
+categories:
+  - 编程
 ---
 
 

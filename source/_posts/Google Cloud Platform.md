@@ -4,7 +4,7 @@ date: 2017/08/01 14:07:02
 tags: 
 	- Google
 categories: 
-	- Google
+	- 编程
 ---
 
 ## 终端连接服务器

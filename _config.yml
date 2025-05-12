@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: '小笔记'
-subtitle: '记录一些基础或者有趣的东西'
+title: 'Blog'
+subtitle: '记录学习的过程'
 description: '坚持、坚持、坚持'
 keywords: blog
 author: 39
@@ -32,7 +32,7 @@ skip_render:
 
 # Writing
 new_post_name: :title.md # File name of new posts
-default_layout: post
+default_layout: jp
 titlecase: false # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab

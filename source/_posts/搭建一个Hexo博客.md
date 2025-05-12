@@ -5,7 +5,7 @@ tags:
 	- Hexo
 	- DropBox
 categories: 
-	- 开发环境
+	- 编程
 ---
 
 ### 概述

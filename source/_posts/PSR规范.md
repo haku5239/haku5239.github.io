@@ -1,8 +1,10 @@
 ---
- title: PSR规范 
- date: 2021/05/10 17:55:17 
- tags: 
- - blog 
+title: PSR规范 
+date: 2021/05/10 17:55:17 
+tags: 
+ - php
+categories:
+  - 编程
 ---
 
 # 「PSR 规范」PSR-1 基础编码规范

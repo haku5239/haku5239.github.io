@@ -4,7 +4,7 @@ date: 2017/08/01 14:45:30
 tags: 
 	- LNMP
 categories: 
-	- LNMP
+	- 编程
 ---
 
 配置 LNMP 环境

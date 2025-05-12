@@ -1,10 +1,10 @@
 ---
- title: mysql常见优化方案 
- date: 2020-05-17 15:55:58 
- tags: 
-
+title: mysql常见优化方案 
+date: 2020-05-17 15:55:58 
+tags: 
  - blog 
- categories: 
+categories: 
+  - 编程
 ---
 
 

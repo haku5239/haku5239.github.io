@@ -5,8 +5,7 @@ tags:
 	- Linux
 	- Command
 categories: 
-	- Command
-	- Linux
+	- 编程
 ---
 
 ### 概述

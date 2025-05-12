@@ -4,7 +4,7 @@ date: 2017/08/02 14:53:43
 tags: 
 	- shell
 categories: 
-	- shell
+	- 编程
 ---
 
 ### 第一行必须是 **"#/bin/sh"**

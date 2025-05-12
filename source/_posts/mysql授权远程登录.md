@@ -1,8 +1,10 @@
 ---
- title: mysql授权远程登录 
- date: 2021/03/23 10:01:16 
- tags: 
- - blog 
+title: mysql授权远程登录 
+date: 2021/03/23 10:01:16 
+tags: 
+ - mysql
+categories:
+  - 编程
 ---
 
 ### mysql授权远程登录

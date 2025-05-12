@@ -1,10 +1,10 @@
 ---
 title: zsh-autosuggestions 中的命令别名
 date: 2017/09/27 15:32:27
-tags: alias
-	- 
-categories: 
+tags: 
 	- alias
+categories: 
+	- 编程
 ---
 
  git 命令别名列表

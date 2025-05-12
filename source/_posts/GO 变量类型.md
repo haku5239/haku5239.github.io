@@ -3,6 +3,8 @@ title: GO 变量
 date: 2021-03-23 15:33:02
 tag: 
 	- GO
+categories:
+    - 编程  
 ---
 
 

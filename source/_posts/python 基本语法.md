@@ -4,7 +4,7 @@ date: 2017/11/22 17:05:38
 tags: 
 	- python
 categories: 
-	- python
+	- 编程
 ---
 
 python 基础语法入门
